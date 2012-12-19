@@ -1,0 +1,52 @@
+@*******************************************************************************
+* Index. This is the gallery page.                        						   *
+*                                                                              *
+*******************************************************************************@
+@* 
+	----------------------------
+	-- Page Specific Metadata --
+	---------------------------- 
+*@
+@pageSpecificMetadata = {
+	<meta name="description" content="This is interior website.">
+	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<title>Dream Hut Interiors</title>
+}
+
+@* 
+	-----------------------
+	-- Page Specific CSS --
+	----------------------- 
+*@
+@pageSpecificCss = {
+	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
+	</script>
+	<script type="text/javascript" src="javascripts/toggle.js"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.4.3.min.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.nivo.slider.pack.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.call.nivo.slider.js")"></script>
+	<link href="@routes.Assets.at("stylesheets/nivo-slider.css")" rel="stylesheet" type="text/css" media="screen" />
+}
+
+@* 
+	-----------------------
+	-- Main HTML Content --
+	----------------------- 
+*@
+@content = {
+@views.html.header()
+@views.html.images()
+@views.html.footer()
+}
+	
+@* 
+	---------------------------------------
+	-- Call the main.scala.html template --
+	---------------------------------------
+*@
+@main(pageSpecificMetadata)(pageSpecificCss)(content)

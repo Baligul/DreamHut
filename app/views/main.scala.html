@@ -1,0 +1,33 @@
+@(pageSpecificMetadata: Html)(pageSpecificCss: Html)(content: Html)
+
+<!doctype html> 
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	@pageSpecificMetadata
+  	@pageSpecificCss
+</head>
+<body>
+	<div id="main">
+    	<!-- header -->
+    	<div id="header">
+			<div id="logo">
+            	<a href="/home"><span class="logo_span">Logo</span><br />
+					Design your dream</a>
+			</div>
+		</div>
+    	<div id="border">
+		<!-- Start: Container -->
+			@content
+		<!-- End: Container -->
+		</div>
+	</div>
+</body>
+</html>

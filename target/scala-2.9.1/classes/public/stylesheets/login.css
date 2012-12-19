@@ -1,0 +1,99 @@
+/* ==|== primary styles =====================================================
+   Author:      Dream Hut Interiors.
+   Copyright:   Dream Hut Interiors. 2012 All rights reserved.
+   ========================================================================== */
+/*
+ * =========================
+ * Start: CSS of Login pages
+ * =========================
+ */
+
+/*
+ * ----------------
+ * Start: Container
+ */
+
+/*
+ * Footer
+ */
+#footer {
+	position: relative;
+  	clear: both;
+  	padding-bottom: 80px;
+}
+
+/* Footer Content */
+#footer-content {
+  	width: 940px;
+  	margin: 40px auto 20px;
+  	padding-top: 20px;
+  	position: relative;
+}
+
+/* Footer left links */
+#footer-left {
+  	float: left;
+  	width: 560px;
+}
+
+/*
+ * Footer section for the content
+ */
+ul.footer_section {
+  	font-size: 14px;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	margin-bottom: 15px;
+}
+
+ul.footer_section li {
+  	float: left;
+  	width: 150px;
+  	color: #596573;
+}
+
+ul.footer_section li div {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.footer_links, .footer_links:active, .footer_links:visited, .footer_links:link {
+	display: block;
+  	color: #596573;
+  	text-decoration: none;
+  	width: 150px;
+  	margin-right: 30px;
+  	padding-top: 3px;
+}
+
+.footer_links:hover {
+  	color: #1E8DD6;
+}
+
+/* Like buttons container */
+#social_links_container {
+  	position: absolute;
+  	right: 0px;
+  	width: 350px;
+}
+
+ul.social_links {
+	float: left;
+	list-style-type: none;
+  	margin: 0;
+  	margin-bottom: 10px;
+  	padding: 0;
+}
+
+ul.social_links li {
+	float: right;
+	margin-right: 10px;
+	width: 300px;
+	padding: 5px;
+}
+/*
+ * =======================
+ * End: CSS of Login pages
+ * =======================
+ */
