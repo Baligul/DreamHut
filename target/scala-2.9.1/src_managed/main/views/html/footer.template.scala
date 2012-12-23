@@ -82,7 +82,7 @@ Seq[Any](format.raw/*5.29*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 20 00:08:43 IST 2012
+                    DATE: Sun Dec 23 17:59:09 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/footer.scala.html
                     HASH: bcfb8a0d1d6bd79237db37e14ccfbb5ab7eed10a
                     MATRIX: 1447->346|2653->1550|2683->1612|2734->1627|2749->1633|2805->1667

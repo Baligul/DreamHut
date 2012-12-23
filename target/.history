@@ -53,3 +53,13 @@ clean
 compile
 run
 clear
+run
+clean
+compile
+eclipsify
+ls
+clear
+clean
+compile
+RUN
+run

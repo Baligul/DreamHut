@@ -37,9 +37,9 @@ Seq[Any](format.raw/*5.2*/("""<div class="top">
 		<div class="bp_all_bg">
 			<div id="slider-wrapper">        
 				<div id="slider" class="nivoSlider">
-					<img src=""""),_display_(Seq[Any](/*9.17*/routes/*9.23*/.Assets.at("/images/top.jpg"))),format.raw/*9.52*/("""" />
-                	<img src=""""),_display_(Seq[Any](/*10.29*/routes/*10.35*/.Assets.at("/images/top2.jpg"))),format.raw/*10.65*/(""""/>
-                	<img src=""""),_display_(Seq[Any](/*11.29*/routes/*11.35*/.Assets.at("/images/top3.jpg"))),format.raw/*11.65*/(""""/>
+					<img src=""""),_display_(Seq[Any](/*9.17*/routes/*9.23*/.Assets.at("images/top.jpg"))),format.raw/*9.51*/("""" />
+                	<img src=""""),_display_(Seq[Any](/*10.29*/routes/*10.35*/.Assets.at("images/top2.jpg"))),format.raw/*10.64*/(""""/>
+                	<img src=""""),_display_(Seq[Any](/*11.29*/routes/*11.35*/.Assets.at("images/top3.jpg"))),format.raw/*11.64*/(""""/>
 				</div>        
 			</div>
 		</div>
@@ -55,10 +55,10 @@ Seq[Any](format.raw/*5.2*/("""<div class="top">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 20 00:08:43 IST 2012
+                    DATE: Sun Dec 23 18:04:18 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/slides.scala.html
-                    HASH: 9ea352aa62a794665f0190f01be037057ec0513b
-                    MATRIX: 1458->325|1631->463|1645->469|1695->498|1764->531|1779->537|1831->567|1899->599|1914->605|1966->635
+                    HASH: c20f17b91fae51b1e5140fcd6fa338260f90ee54
+                    MATRIX: 1458->325|1631->463|1645->469|1694->497|1763->530|1778->536|1829->565|1897->597|1912->603|1963->632
                     LINES: 36->5|40->9|40->9|40->9|41->10|41->10|41->10|42->11|42->11|42->11
                     -- GENERATED --
                 */
