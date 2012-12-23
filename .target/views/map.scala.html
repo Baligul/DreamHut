@@ -1,0 +1,50 @@
+@*******************************************************************************
+* Index. This is the map page.                        						   *
+*                                                                              *
+*******************************************************************************@
+@* 
+	----------------------------
+	-- Page Specific Metadata --
+	---------------------------- 
+*@
+@pageSpecificMetadata = {
+	<meta name="description" content="This is interior website.">
+	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<title>Dream Hut Interiors</title>
+}
+
+@* 
+	-----------------------
+	-- Page Specific CSS --
+	----------------------- 
+*@
+@pageSpecificCss = {
+	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
+	</script>
+	<script type="text/javascript" src="javascripts/toggle.js"></script>
+}
+
+@* 
+	-----------------------
+	-- Main HTML Content --
+	----------------------- 
+*@
+@content = {
+@views.html.header()
+	<div class="ifrm">
+		<iframe src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Delixus+Software+India+Pvt.+Ltd,+6th+Main+Road,+Jayamahal,+Bangalore,+Karnataka&amp;sll=13.001484,77.592831&amp;sspn=0.009241,0.016512&amp;ie=UTF8&amp;hq=Delixus+Software+India+Pvt.+Ltd,&amp;hnear=6th+Main+Rd,+Jayamahal,+Bengaluru,+Karnataka&amp;ll=13.001484,77.592831&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed" width="100%" height="100%" ></iframe>
+	</div>
+@views.html.footer()
+}
+	
+@* 
+	---------------------------------------
+	-- Call the main.scala.html template --
+	---------------------------------------
+*@
+@main(pageSpecificMetadata)(pageSpecificCss)(content)
