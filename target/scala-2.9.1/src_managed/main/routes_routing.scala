@@ -1,6 +1,6 @@
 // @SOURCE:/var/svn/DreamHut/conf/routes
-// @HASH:9c69bbe616c94b3955f138934e281b05231d0d3f
-// @DATE:Sun Dec 23 17:59:03 IST 2012
+// @HASH:29cc22770757ad34819e3cf14ec8832ec5852db9
+// @DATE:Tue Dec 25 16:46:27 IST 2012
 
 import play.core._
 import play.core.Router._
@@ -42,14 +42,74 @@ val controllers_Application_map5 = Route("GET", PathPattern(List(StaticPart("/ma
 val controllers_Application_login6 = Route("GET", PathPattern(List(StaticPart("/login"))))
                     
 
-// @LINE:13
-val controllers_Application_signup7 = Route("GET", PathPattern(List(StaticPart("/signup"))))
+// @LINE:16
+val controllers_Enter_estimator7 = Route("GET", PathPattern(List(StaticPart("/estimator"))))
                     
 
 // @LINE:17
-val controllers_Assets_at8 = Route("GET", PathPattern(List(StaticPart("/assets/"),DynamicPart("file", """.+"""))))
+val controllers_Enter_estimator8 = Route("POST", PathPattern(List(StaticPart("/estimator"))))
                     
-def documentation = List(("""GET""","""/""","""controllers.Application.index()"""),("""GET""","""/home""","""controllers.Application.home()"""),("""GET""","""/about""","""controllers.Application.about()"""),("""GET""","""/gallery""","""controllers.Application.gallery()"""),("""GET""","""/contact""","""controllers.Application.contact()"""),("""GET""","""/map""","""controllers.Application.map()"""),("""GET""","""/login""","""controllers.Application.login()"""),("""GET""","""/signup""","""controllers.Application.signup()"""),("""GET""","""/assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""))
+
+// @LINE:20
+val controllers_Assets_at9 = Route("GET", PathPattern(List(StaticPart("/assets/"),DynamicPart("file", """.+"""))))
+                    
+
+// @LINE:23
+val securesocial_controllers_LoginPage_login10 = Route("GET", PathPattern(List(StaticPart("/login"))))
+                    
+
+// @LINE:24
+val securesocial_controllers_LoginPage_logout11 = Route("GET", PathPattern(List(StaticPart("/logout"))))
+                    
+
+// @LINE:27
+val securesocial_controllers_Registration_startSignUp12 = Route("GET", PathPattern(List(StaticPart("/signup"))))
+                    
+
+// @LINE:28
+val securesocial_controllers_Registration_handleStartSignUp13 = Route("POST", PathPattern(List(StaticPart("/signup"))))
+                    
+
+// @LINE:29
+val securesocial_controllers_Registration_signUp14 = Route("GET", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:30
+val securesocial_controllers_Registration_handleSignUp15 = Route("POST", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:31
+val securesocial_controllers_Registration_startResetPassword16 = Route("GET", PathPattern(List(StaticPart("/reset"))))
+                    
+
+// @LINE:32
+val securesocial_controllers_Registration_handleStartResetPassword17 = Route("POST", PathPattern(List(StaticPart("/reset"))))
+                    
+
+// @LINE:33
+val securesocial_controllers_Registration_resetPassword18 = Route("GET", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:34
+val securesocial_controllers_Registration_handleResetPassword19 = Route("POST", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:35
+val securesocial_controllers_PasswordChange_page20 = Route("GET", PathPattern(List(StaticPart("/password"))))
+                    
+
+// @LINE:36
+val securesocial_controllers_PasswordChange_handlePasswordChange21 = Route("POST", PathPattern(List(StaticPart("/password"))))
+                    
+
+// @LINE:39
+val securesocial_controllers_ProviderController_authenticate22 = Route("GET", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
+                    
+
+// @LINE:40
+val securesocial_controllers_ProviderController_authenticateByPost23 = Route("POST", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
+                    
+def documentation = List(("""GET""","""/""","""controllers.Application.index()"""),("""GET""","""/home""","""controllers.Application.home()"""),("""GET""","""/about""","""controllers.Application.about()"""),("""GET""","""/gallery""","""controllers.Application.gallery()"""),("""GET""","""/contact""","""controllers.Application.contact()"""),("""GET""","""/map""","""controllers.Application.map()"""),("""GET""","""/login""","""controllers.Application.login()"""),("""GET""","""/estimator""","""controllers.Enter.estimator()"""),("""POST""","""/estimator""","""controllers.Enter.estimator()"""),("""GET""","""/assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""","""/login""","""securesocial.controllers.LoginPage.login"""),("""GET""","""/logout""","""securesocial.controllers.LoginPage.logout"""),("""GET""","""/signup""","""securesocial.controllers.Registration.startSignUp"""),("""POST""","""/signup""","""securesocial.controllers.Registration.handleStartSignUp"""),("""GET""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.signUp(token:String)"""),("""POST""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.handleSignUp(token:String)"""),("""GET""","""/reset""","""securesocial.controllers.Registration.startResetPassword"""),("""POST""","""/reset""","""securesocial.controllers.Registration.handleStartResetPassword"""),("""GET""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.resetPassword(token:String)"""),("""POST""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.handleResetPassword(token:String)"""),("""GET""","""/password""","""securesocial.controllers.PasswordChange.page"""),("""POST""","""/password""","""securesocial.controllers.PasswordChange.handlePasswordChange"""),("""GET""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticate(provider:String)"""),("""POST""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticateByPost(provider:String)"""))
              
     
 def routes:PartialFunction[RequestHeader,Handler] = {        
@@ -110,18 +170,138 @@ case controllers_Application_login6(params) => {
 }
                     
 
-// @LINE:13
-case controllers_Application_signup7(params) => {
+// @LINE:16
+case controllers_Enter_estimator7(params) => {
    call { 
-        invokeHandler(_root_.controllers.Application.signup(), HandlerDef(this, "controllers.Application", "signup", Nil))
+        invokeHandler(_root_.controllers.Enter.estimator(), HandlerDef(this, "controllers.Enter", "estimator", Nil))
    }
 }
                     
 
 // @LINE:17
-case controllers_Assets_at8(params) => {
+case controllers_Enter_estimator8(params) => {
+   call { 
+        invokeHandler(_root_.controllers.Enter.estimator(), HandlerDef(this, "controllers.Enter", "estimator", Nil))
+   }
+}
+                    
+
+// @LINE:20
+case controllers_Assets_at9(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         invokeHandler(_root_.controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String])))
+   }
+}
+                    
+
+// @LINE:23
+case securesocial_controllers_LoginPage_login10(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.LoginPage.login, HandlerDef(this, "securesocial.controllers.LoginPage", "login", Nil))
+   }
+}
+                    
+
+// @LINE:24
+case securesocial_controllers_LoginPage_logout11(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.LoginPage.logout, HandlerDef(this, "securesocial.controllers.LoginPage", "logout", Nil))
+   }
+}
+                    
+
+// @LINE:27
+case securesocial_controllers_Registration_startSignUp12(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.Registration.startSignUp, HandlerDef(this, "securesocial.controllers.Registration", "startSignUp", Nil))
+   }
+}
+                    
+
+// @LINE:28
+case securesocial_controllers_Registration_handleStartSignUp13(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.Registration.handleStartSignUp, HandlerDef(this, "securesocial.controllers.Registration", "handleStartSignUp", Nil))
+   }
+}
+                    
+
+// @LINE:29
+case securesocial_controllers_Registration_signUp14(params) => {
+   call(params.fromPath[String]("token", None)) { (token) =>
+        invokeHandler(_root_.securesocial.controllers.Registration.signUp(token), HandlerDef(this, "securesocial.controllers.Registration", "signUp", Seq(classOf[String])))
+   }
+}
+                    
+
+// @LINE:30
+case securesocial_controllers_Registration_handleSignUp15(params) => {
+   call(params.fromPath[String]("token", None)) { (token) =>
+        invokeHandler(_root_.securesocial.controllers.Registration.handleSignUp(token), HandlerDef(this, "securesocial.controllers.Registration", "handleSignUp", Seq(classOf[String])))
+   }
+}
+                    
+
+// @LINE:31
+case securesocial_controllers_Registration_startResetPassword16(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.Registration.startResetPassword, HandlerDef(this, "securesocial.controllers.Registration", "startResetPassword", Nil))
+   }
+}
+                    
+
+// @LINE:32
+case securesocial_controllers_Registration_handleStartResetPassword17(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.Registration.handleStartResetPassword, HandlerDef(this, "securesocial.controllers.Registration", "handleStartResetPassword", Nil))
+   }
+}
+                    
+
+// @LINE:33
+case securesocial_controllers_Registration_resetPassword18(params) => {
+   call(params.fromPath[String]("token", None)) { (token) =>
+        invokeHandler(_root_.securesocial.controllers.Registration.resetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "resetPassword", Seq(classOf[String])))
+   }
+}
+                    
+
+// @LINE:34
+case securesocial_controllers_Registration_handleResetPassword19(params) => {
+   call(params.fromPath[String]("token", None)) { (token) =>
+        invokeHandler(_root_.securesocial.controllers.Registration.handleResetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "handleResetPassword", Seq(classOf[String])))
+   }
+}
+                    
+
+// @LINE:35
+case securesocial_controllers_PasswordChange_page20(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.PasswordChange.page, HandlerDef(this, "securesocial.controllers.PasswordChange", "page", Nil))
+   }
+}
+                    
+
+// @LINE:36
+case securesocial_controllers_PasswordChange_handlePasswordChange21(params) => {
+   call { 
+        invokeHandler(_root_.securesocial.controllers.PasswordChange.handlePasswordChange, HandlerDef(this, "securesocial.controllers.PasswordChange", "handlePasswordChange", Nil))
+   }
+}
+                    
+
+// @LINE:39
+case securesocial_controllers_ProviderController_authenticate22(params) => {
+   call(params.fromPath[String]("provider", None)) { (provider) =>
+        invokeHandler(_root_.securesocial.controllers.ProviderController.authenticate(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticate", Seq(classOf[String])))
+   }
+}
+                    
+
+// @LINE:40
+case securesocial_controllers_ProviderController_authenticateByPost23(params) => {
+   call(params.fromPath[String]("provider", None)) { (provider) =>
+        invokeHandler(_root_.securesocial.controllers.ProviderController.authenticateByPost(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticateByPost", Seq(classOf[String])))
    }
 }
                     

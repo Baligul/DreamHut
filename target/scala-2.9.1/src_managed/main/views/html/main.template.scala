@@ -47,14 +47,17 @@ Seq[Any](format.raw/*1.68*/("""
 	<div id="main">
     	<!-- header -->
     	<div id="header">
+    		<div id="header_title">
+            	<a href="/home"><span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br></a>
+			</div>
 			<div id="logo">
             	<a href="/home"><span class="logo_span">Logo</span><br />
-					Design your dream</a>
+						Design your dream</a>
 			</div>
 		</div>
     	<div id="border">
 		<!-- Start: Container -->
-			"""),_display_(Seq[Any](/*28.5*/content)),format.raw/*28.12*/("""
+			"""),_display_(Seq[Any](/*31.5*/content)),format.raw/*31.12*/("""
 		<!-- End: Container -->
 		</div>
 	</div>
@@ -71,11 +74,11 @@ Seq[Any](format.raw/*1.68*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Dec 23 17:59:07 IST 2012
+                    DATE: Tue Dec 25 16:10:07 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/main.scala.html
-                    HASH: 83e5acbb14debc7c0f0eb31286944bc811b0b99a
-                    MATRIX: 762->1|905->67|1426->553|1468->573|1508->578|1545->593|1848->861|1877->868
-                    LINES: 27->1|30->1|43->14|43->14|44->15|44->15|57->28|57->28
+                    HASH: d7b88408f8a8ddf600bd9c95b87b862a54f2a74f
+                    MATRIX: 762->1|905->67|1426->553|1468->573|1508->578|1545->593|2043->1056|2072->1063
+                    LINES: 27->1|30->1|43->14|43->14|44->15|44->15|60->31|60->31
                     -- GENERATED --
                 */
             

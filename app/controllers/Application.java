@@ -34,9 +34,4 @@ public class Application extends Controller {
   public static Result login() {
 	  return ok(login.render());
    }
-  
-  public static Result signup() {
-	  return ok(sign_up.render());
-   }
-  
 }

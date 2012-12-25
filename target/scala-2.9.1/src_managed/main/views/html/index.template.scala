@@ -48,32 +48,36 @@ Seq[Any](format.raw/*21.21*/("""
 	<script type="text/javascript">
        Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
 	</script>
-	<script type="text/javascript" src="javascripts/toggle.js"></script>
-	<script type="text/javascript" src=""""),_display_(Seq[Any](/*30.39*/routes/*30.45*/.Assets.at("javascripts/jquery-1.4.3.min.js"))),format.raw/*30.90*/(""""></script>
-	<script type="text/javascript" src=""""),_display_(Seq[Any](/*31.39*/routes/*31.45*/.Assets.at("javascripts/jquery.nivo.slider.pack.js"))),format.raw/*31.97*/(""""></script>
-	<script type="text/javascript" src=""""),_display_(Seq[Any](/*32.39*/routes/*32.45*/.Assets.at("javascripts/jquery.call.nivo.slider.js"))),format.raw/*32.97*/(""""></script>
-	<link href=""""),_display_(Seq[Any](/*33.15*/routes/*33.21*/.Assets.at("stylesheets/nivo-slider.css"))),format.raw/*33.62*/("""" rel="stylesheet" type="text/css" media="screen" />
-""")))};def /*41.2*/content/*41.9*/:play.api.templates.Html = {_display_(
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#header_title')('.box_tit_text');
+	</script>
+	<script type="text/javascript" src=""""),_display_(Seq[Any](/*32.39*/routes/*32.45*/.Assets.at("javascripts/jquery-1.4.3.min.js"))),format.raw/*32.90*/(""""></script>
+	<script type="text/javascript" src=""""),_display_(Seq[Any](/*33.39*/routes/*33.45*/.Assets.at("javascripts/jquery.nivo.slider.pack.js"))),format.raw/*33.97*/(""""></script>
+	<script type="text/javascript" src=""""),_display_(Seq[Any](/*34.39*/routes/*34.45*/.Assets.at("javascripts/jquery.call.nivo.slider.js"))),format.raw/*34.97*/(""""></script>
+	<link href=""""),_display_(Seq[Any](/*35.15*/routes/*35.21*/.Assets.at("stylesheets/nivo-slider.css"))),format.raw/*35.62*/("""" rel="stylesheet" type="text/css" media="screen" />
+""")))};def /*43.2*/content/*43.9*/:play.api.templates.Html = {_display_(
 
-Seq[Any](format.raw/*41.13*/("""
-"""),_display_(Seq[Any](/*42.2*/views/*42.7*/.html.header())),format.raw/*42.21*/("""
-"""),_display_(Seq[Any](/*43.2*/views/*43.7*/.html.slides())),format.raw/*43.21*/("""
-<div>
-<a href="/signup">Sign Up</a>
-</div>
-"""),_display_(Seq[Any](/*47.2*/views/*47.7*/.html.footer())),format.raw/*47.21*/("""
+Seq[Any](format.raw/*43.13*/("""
+"""),_display_(Seq[Any](/*44.2*/views/*44.7*/.html.header())),format.raw/*44.21*/("""
+	<div id="signin_button_container" class="signin_button_container">
+				<div id="provider_login" class="provider_login">
+	                <a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src=""""),_display_(Seq[Any](/*47.99*/routes/*47.105*/.Assets.at("images/facebook.jpg"))),format.raw/*47.138*/("""" height="65px" width="350px" /></a>
+	                <a id="provider_google" class="provider_google" href="/authenticate/google"><img src=""""),_display_(Seq[Any](/*48.105*/routes/*48.111*/.Assets.at("images/google.png"))),format.raw/*48.142*/("""" height="65px" width="350px" /></a>
+		        </div>
+	</div>
+"""),_display_(Seq[Any](/*51.2*/views/*51.7*/.html.footer())),format.raw/*51.21*/("""
 """)))};
 Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*14.2*/("""
 
 """),format.raw/*20.3*/("""
-"""),format.raw/*34.2*/("""
+"""),format.raw/*36.2*/("""
 
-"""),format.raw/*40.3*/("""
-"""),format.raw/*48.2*/("""
+"""),format.raw/*42.3*/("""
+"""),format.raw/*52.2*/("""
 	
-"""),format.raw/*54.3*/("""
-"""),_display_(Seq[Any](/*55.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
+"""),format.raw/*58.3*/("""
+"""),_display_(Seq[Any](/*59.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
     }
     
     def render() = apply()
@@ -85,11 +89,11 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Dec 23 17:59:08 IST 2012
+                    DATE: Tue Dec 25 16:46:27 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/index.scala.html
-                    HASH: 65c55c1942edb2994948f5456d5231047c053151
-                    MATRIX: 1412->408|1441->428|1509->432|1720->706|1744->721|1812->725|1863->740|1878->746|1936->782|2072->882|2087->888|2145->923|2222->964|2237->970|2297->1008|2383->1058|2398->1064|2482->1125|2749->1356|2764->1362|2831->1407|2917->1457|2932->1463|3006->1515|3092->1565|3107->1571|3181->1623|3243->1649|3258->1655|3321->1696|3398->1836|3413->1843|3481->1847|3518->1849|3531->1854|3567->1868|3604->1870|3617->1875|3653->1889|3733->1934|3746->1939|3782->1953|3822->406|3850->620|3879->704|3907->1750|3936->1834|3964->1955|3994->2087|4031->2089
-                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|52->30|52->30|52->30|53->31|53->31|53->31|54->32|54->32|54->32|55->33|55->33|55->33|56->41|56->41|58->41|59->42|59->42|59->42|60->43|60->43|60->43|64->47|64->47|64->47|66->9|67->14|69->20|70->34|72->40|73->48|75->54|76->55
+                    HASH: 7fa2032bafb513b0fbeb8ee7d129ee3f6a53c364
+                    MATRIX: 1412->408|1441->428|1509->432|1720->706|1744->721|1812->725|1863->740|1878->746|1936->782|2072->882|2087->888|2145->923|2222->964|2237->970|2297->1008|2383->1058|2398->1064|2482->1125|2798->1405|2813->1411|2880->1456|2966->1506|2981->1512|3055->1564|3141->1614|3156->1620|3230->1672|3292->1698|3307->1704|3370->1745|3447->1885|3462->1892|3530->1896|3567->1898|3580->1903|3616->1917|3872->2137|3888->2143|3944->2176|4122->2317|4138->2323|4192->2354|4290->2417|4303->2422|4339->2436|4379->406|4407->620|4436->704|4464->1799|4493->1883|4521->2438|4551->2570|4588->2572
+                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->33|55->33|55->33|56->34|56->34|56->34|57->35|57->35|57->35|58->43|58->43|60->43|61->44|61->44|61->44|64->47|64->47|64->47|65->48|65->48|65->48|68->51|68->51|68->51|70->9|71->14|73->20|74->36|76->42|77->52|79->58|80->59
                     -- GENERATED --
                 */
             

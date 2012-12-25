@@ -19,18 +19,25 @@
 	----------------------- 
 *@
 @pageSpecificCss = {
-	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/styles.css")"  media="all" />
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/login.css")" media="screen" />
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/highslide.css")" />
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
 	<script type="text/javascript">
        Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
 	</script>
-	<script type="text/javascript" src="javascripts/toggle.js"></script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#header_title')('.box_tit_text');
+	</script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#album_title')('.box_tit_text');
+	</script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.4.3.min.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.nivo.slider.pack.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.call.nivo.slider.js")"></script>
-	<link href="@routes.Assets.at("stylesheets/nivo-slider.css")" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/highslide-with-gallery.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/main.js")"></script>
 }
 
 @* 
@@ -40,7 +47,7 @@
 *@
 @content = {
 @views.html.header()
-@views.html.images()
+@views.html.album()
 @views.html.footer()
 }
 	

@@ -48,27 +48,29 @@ Seq[Any](format.raw/*21.21*/("""
 	<script type="text/javascript">
        Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
 	</script>
-	<script type="text/javascript" src="javascripts/toggle.js"></script>
-""")))};def /*37.2*/content/*37.9*/:play.api.templates.Html = {_display_(
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#header_title')('.box_tit_text');
+	</script>
+""")))};def /*39.2*/content/*39.9*/:play.api.templates.Html = {_display_(
 
-Seq[Any](format.raw/*37.13*/("""
-"""),_display_(Seq[Any](/*38.2*/views/*38.7*/.html.header())),format.raw/*38.21*/("""
+Seq[Any](format.raw/*39.13*/("""
+"""),_display_(Seq[Any](/*40.2*/views/*40.7*/.html.header())),format.raw/*40.21*/("""
 	<div class="ifrm">
-		<iframe src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Delixus+Software+India+Pvt.+Ltd,+6th+Main+Road,+Jayamahal,+Bangalore,+Karnataka&amp;sll=13.001484,77.592831&amp;sspn=0.009241,0.016512&amp;ie=UTF8&amp;hq=Delixus+Software+India+Pvt.+Ltd,&amp;hnear=6th+Main+Rd,+Jayamahal,+Bengaluru,+Karnataka&amp;ll=13.001484,77.592831&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed" width="100%" height="100%" ></iframe>
+		<iframe src="https://maps.google.co.in/maps/ms?authuser=0&ie=UTF8&hl=en&oe=UTF8&msa=0&msid=212260133269557036835.0004d19afa5d3361df849" width="100%" height="100%" ></iframe>
 	</div>
-"""),_display_(Seq[Any](/*42.2*/views/*42.7*/.html.footer())),format.raw/*42.21*/("""
+"""),_display_(Seq[Any](/*44.2*/views/*44.7*/.html.footer())),format.raw/*44.21*/("""
 """)))};
 Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*14.2*/("""
 
 """),format.raw/*20.3*/("""
-"""),format.raw/*30.2*/("""
+"""),format.raw/*32.2*/("""
 
-"""),format.raw/*36.3*/("""
-"""),format.raw/*43.2*/("""
+"""),format.raw/*38.3*/("""
+"""),format.raw/*45.2*/("""
 	
-"""),format.raw/*49.3*/("""
-"""),_display_(Seq[Any](/*50.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
+"""),format.raw/*51.3*/("""
+"""),_display_(Seq[Any](/*52.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
     }
     
     def render() = apply()
@@ -80,11 +82,11 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Dec 23 17:59:09 IST 2012
+                    DATE: Tue Dec 25 16:10:07 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/map.scala.html
-                    HASH: 38ce1e892940578b16f1eaabd9201bce3486608b
-                    MATRIX: 1408->407|1437->427|1505->431|1716->705|1740->720|1808->724|1859->739|1874->745|1932->781|2068->881|2083->887|2141->922|2218->963|2233->969|2293->1007|2379->1057|2394->1063|2478->1124|2695->1404|2710->1411|2778->1415|2815->1417|2828->1422|2864->1436|3382->1919|3395->1924|3431->1938|3471->405|3499->619|3528->703|3556->1318|3585->1402|3613->1940|3643->2072|3680->2074
-                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|52->37|52->37|54->37|55->38|55->38|55->38|59->42|59->42|59->42|61->9|62->14|64->20|65->30|67->36|68->43|70->49|71->50
+                    HASH: 71752d3efb206a9970dbcac37d2b91f413e9bb39
+                    MATRIX: 1408->407|1437->427|1505->431|1716->705|1740->720|1808->724|1859->739|1874->745|1932->781|2068->881|2083->887|2141->922|2218->963|2233->969|2293->1007|2379->1057|2394->1063|2478->1124|2744->1453|2759->1460|2827->1464|2864->1466|2877->1471|2913->1485|3154->1691|3167->1696|3203->1710|3243->405|3271->619|3300->703|3328->1367|3357->1451|3385->1712|3415->1844|3452->1846
+                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->39|54->39|56->39|57->40|57->40|57->40|61->44|61->44|61->44|63->9|64->14|66->20|67->32|69->38|70->45|72->51|73->52
                     -- GENERATED --
                 */
             

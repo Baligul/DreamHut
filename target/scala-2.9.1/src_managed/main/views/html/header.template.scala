@@ -35,10 +35,10 @@ object header extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.
 
 Seq[Any](format.raw/*5.2*/("""<div id="buttons">
 		<a href="/home" class="but"  title="">Home</a><div class="but_div"></div>
-		<a href="/gallery"  class="but" title="">Gallery</a><div class="but_div"></div>
-		<a href="/about"  class="but" title="">About&nbsp;us</a><div class="but_div"></div>
-		<a href="/contact" class="but" title="">Contact&nbsp;us</a><div class="but_div"></div>
-		<a href="/map" class="but">MAP</a><div class="but_div"></div>
+		<a href="/gallery"  class="but" title="">Work&nbsp;Pictures</a><div class="but_div"></div>
+		<a href="/projects"  class="but" title="">Projects&nbsp;Done</a><div class="but_div"></div>
+		<a href="/offers" class="but">Offers</a><div class="but_div"></div>
+		<a href="/contact" class="but" title="">Contact&nbsp;Us</a><div class="but_div"></div>
 	</div>
 """))}
     }
@@ -52,9 +52,9 @@ Seq[Any](format.raw/*5.2*/("""<div id="buttons">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Dec 23 17:59:09 IST 2012
+                    DATE: Tue Dec 25 16:10:08 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/header.scala.html
-                    HASH: e580b30e61a00d9a5b0625c2ce225b0d3bc90501
+                    HASH: 1e5c471b6d8364c6886649eccc265647a042d31e
                     MATRIX: 1452->322
                     LINES: 36->5
                     -- GENERATED --
