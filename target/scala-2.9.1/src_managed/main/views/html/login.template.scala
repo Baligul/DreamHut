@@ -56,7 +56,7 @@ Seq[Any](format.raw/*5.2*/("""<div id="header_right">
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Dec 25 16:10:07 IST 2012
+                    DATE: Thu Dec 27 03:50:11 IST 2012
                     SOURCE: /var/svn/DreamHut/app/views/login.scala.html
                     HASH: 568369e14bcef5748c337b96d67119560f82a8ad
                     MATRIX: 1413->303

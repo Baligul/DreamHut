@@ -42,12 +42,32 @@
 *@
 @content = {
 @views.html.header()
-	<div id="signin_button_container" class="signin_button_container">
-				<div id="provider_login" class="provider_login">
-	                <a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src="@routes.Assets.at("images/facebook.jpg")" height="65px" width="350px" /></a>
-	                <a id="provider_google" class="provider_google" href="/authenticate/google"><img src="@routes.Assets.at("images/google.png")" height="65px" width="350px" /></a>
-		        </div>
+<div>
+<table>
+<tr>
+<td>
+	<div id="header_title">
+		<span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br>
 	</div>
+</td>
+<td>Slider will go here.</td>
+<td >
+<table>
+<tr><td></td></tr>
+<tr><td><a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src="@routes.Assets.at("images/facebook.jpg")" /></a></td></tr>
+<tr><td><a id="provider_google" class="provider_google" href="/authenticate/google"><img src="@routes.Assets.at("images/google.jpg")" /></a></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+	
+	
+	
+	
 @views.html.footer()
 }
 	

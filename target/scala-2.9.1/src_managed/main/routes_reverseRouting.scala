@@ -1,6 +1,6 @@
 // @SOURCE:/var/svn/DreamHut/conf/routes
-// @HASH:29cc22770757ad34819e3cf14ec8832ec5852db9
-// @DATE:Tue Dec 25 16:46:27 IST 2012
+// @HASH:cd320496cb204d6f45ae7d05522adc21e1e11207
+// @DATE:Thu Dec 27 03:50:06 IST 2012
 
 import play.core._
 import play.core.Router._
@@ -12,11 +12,8 @@ import play.libs.F
 import Router.queryString
 
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
 // @LINE:36
-// @LINE:35
-// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -24,24 +21,27 @@ import Router.queryString
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
 // @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 package securesocial.controllers {
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
+// @LINE:36
 class ReverseProviderController {
     
 
 
  
-// @LINE:40
+// @LINE:37
 def authenticateByPost(provider:String) = {
    Call("POST", "/authenticate/" + implicitly[PathBindable[String]].unbind("provider", provider))
 }
                                                         
  
-// @LINE:39
+// @LINE:36
 def authenticate(provider:String) = {
    Call("GET", "/authenticate/" + implicitly[PathBindable[String]].unbind("provider", provider))
 }
@@ -52,20 +52,20 @@ def authenticate(provider:String) = {
 }
                             
 
-// @LINE:36
-// @LINE:35
+// @LINE:33
+// @LINE:32
 class ReversePasswordChange {
     
 
 
  
-// @LINE:35
+// @LINE:32
 def page() = {
    Call("GET", "/password")
 }
                                                         
  
-// @LINE:36
+// @LINE:33
 def handlePasswordChange() = {
    Call("POST", "/password")
 }
@@ -76,20 +76,20 @@ def handlePasswordChange() = {
 }
                             
 
-// @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 class ReverseLoginPage {
     
 
 
  
-// @LINE:24
+// @LINE:21
 def logout() = {
    Call("GET", "/logout")
 }
                                                         
  
-// @LINE:23
+// @LINE:20
 def login() = {
    Call("GET", "/login")
 }
@@ -100,62 +100,62 @@ def login() = {
 }
                             
 
-// @LINE:34
-// @LINE:33
-// @LINE:32
 // @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
+// @LINE:24
 class ReverseRegistration {
     
 
 
  
-// @LINE:32
+// @LINE:29
 def handleStartResetPassword() = {
    Call("POST", "/reset")
 }
                                                         
  
-// @LINE:28
+// @LINE:25
 def handleStartSignUp() = {
    Call("POST", "/signup")
 }
                                                         
  
-// @LINE:30
+// @LINE:27
 def handleSignUp(token:String) = {
    Call("POST", "/signup/" + implicitly[PathBindable[String]].unbind("token", token))
 }
                                                         
  
-// @LINE:27
+// @LINE:24
 def startSignUp() = {
    Call("GET", "/signup")
 }
                                                         
  
-// @LINE:33
+// @LINE:30
 def resetPassword(token:String) = {
    Call("GET", "/reset/" + implicitly[PathBindable[String]].unbind("token", token))
 }
                                                         
  
-// @LINE:31
+// @LINE:28
 def startResetPassword() = {
    Call("GET", "/reset")
 }
                                                         
  
-// @LINE:29
+// @LINE:26
 def signUp(token:String) = {
    Call("GET", "/signup/" + implicitly[PathBindable[String]].unbind("token", token))
 }
                                                         
  
-// @LINE:34
+// @LINE:31
 def handleResetPassword(token:String) = {
    Call("POST", "/reset/" + implicitly[PathBindable[String]].unbind("token", token))
 }
@@ -168,7 +168,7 @@ def handleResetPassword(token:String) = {
 }
                     
 
-// @LINE:20
+// @LINE:40
 // @LINE:17
 // @LINE:16
 // @LINE:12
@@ -182,7 +182,7 @@ package controllers {
 
 // @LINE:17
 // @LINE:16
-class ReverseEnter {
+class ReverseStart {
     
 
 
@@ -192,10 +192,10 @@ class ReverseEnter {
 def estimator() = {
    () match {
 // @LINE:16
-case () if true => Call("GET", "/estimator")
+case () if true => Call("GET", "/start")
                                                                 
 // @LINE:17
-case () if true => Call("POST", "/estimator")
+case () if true => Call("POST", "/start")
                                                                     
    }
 }
@@ -265,13 +265,13 @@ def contact() = {
 }
                             
 
-// @LINE:20
+// @LINE:40
 class ReverseAssets {
     
 
 
  
-// @LINE:20
+// @LINE:40
 def at(file:String) = {
    Call("GET", "/assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -285,11 +285,8 @@ def at(file:String) = {
                     
 
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
 // @LINE:36
-// @LINE:35
-// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -297,18 +294,21 @@ def at(file:String) = {
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
 // @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 package securesocial.controllers.javascript {
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
+// @LINE:36
 class ReverseProviderController {
     
 
 
  
-// @LINE:40
+// @LINE:37
 def authenticateByPost = JavascriptReverseRoute(
    "securesocial.controllers.ProviderController.authenticateByPost",
    """
@@ -319,7 +319,7 @@ def authenticateByPost = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:39
+// @LINE:36
 def authenticate = JavascriptReverseRoute(
    "securesocial.controllers.ProviderController.authenticate",
    """
@@ -335,14 +335,14 @@ def authenticate = JavascriptReverseRoute(
 }
                             
 
-// @LINE:36
-// @LINE:35
+// @LINE:33
+// @LINE:32
 class ReversePasswordChange {
     
 
 
  
-// @LINE:35
+// @LINE:32
 def page = JavascriptReverseRoute(
    "securesocial.controllers.PasswordChange.page",
    """
@@ -353,7 +353,7 @@ def page = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:36
+// @LINE:33
 def handlePasswordChange = JavascriptReverseRoute(
    "securesocial.controllers.PasswordChange.handlePasswordChange",
    """
@@ -369,14 +369,14 @@ def handlePasswordChange = JavascriptReverseRoute(
 }
                             
 
-// @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 class ReverseLoginPage {
     
 
 
  
-// @LINE:24
+// @LINE:21
 def logout = JavascriptReverseRoute(
    "securesocial.controllers.LoginPage.logout",
    """
@@ -387,7 +387,7 @@ def logout = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:23
+// @LINE:20
 def login = JavascriptReverseRoute(
    "securesocial.controllers.LoginPage.login",
    """
@@ -403,20 +403,20 @@ def login = JavascriptReverseRoute(
 }
                             
 
-// @LINE:34
-// @LINE:33
-// @LINE:32
 // @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
+// @LINE:24
 class ReverseRegistration {
     
 
 
  
-// @LINE:32
+// @LINE:29
 def handleStartResetPassword = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleStartResetPassword",
    """
@@ -427,7 +427,7 @@ def handleStartResetPassword = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:28
+// @LINE:25
 def handleStartSignUp = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleStartSignUp",
    """
@@ -438,7 +438,7 @@ def handleStartSignUp = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:30
+// @LINE:27
 def handleSignUp = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleSignUp",
    """
@@ -449,7 +449,7 @@ def handleSignUp = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:27
+// @LINE:24
 def startSignUp = JavascriptReverseRoute(
    "securesocial.controllers.Registration.startSignUp",
    """
@@ -460,7 +460,7 @@ def startSignUp = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:33
+// @LINE:30
 def resetPassword = JavascriptReverseRoute(
    "securesocial.controllers.Registration.resetPassword",
    """
@@ -471,7 +471,7 @@ def resetPassword = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:31
+// @LINE:28
 def startResetPassword = JavascriptReverseRoute(
    "securesocial.controllers.Registration.startResetPassword",
    """
@@ -482,7 +482,7 @@ def startResetPassword = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:29
+// @LINE:26
 def signUp = JavascriptReverseRoute(
    "securesocial.controllers.Registration.signUp",
    """
@@ -493,7 +493,7 @@ def signUp = JavascriptReverseRoute(
 )
                                                         
  
-// @LINE:34
+// @LINE:31
 def handleResetPassword = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleResetPassword",
    """
@@ -511,7 +511,7 @@ def handleResetPassword = JavascriptReverseRoute(
 }
                     
 
-// @LINE:20
+// @LINE:40
 // @LINE:17
 // @LINE:16
 // @LINE:12
@@ -525,7 +525,7 @@ package controllers.javascript {
 
 // @LINE:17
 // @LINE:16
-class ReverseEnter {
+class ReverseStart {
     
 
 
@@ -533,14 +533,14 @@ class ReverseEnter {
 // @LINE:17
 // @LINE:16
 def estimator = JavascriptReverseRoute(
-   "controllers.Enter.estimator",
+   "controllers.Start.estimator",
    """
       function() {
       if (true) {
-      return _wA({method:"GET", url:"/estimator"})
+      return _wA({method:"GET", url:"/start"})
       }
       if (true) {
-      return _wA({method:"POST", url:"/estimator"})
+      return _wA({method:"POST", url:"/start"})
       }
       }
    """
@@ -646,13 +646,13 @@ def contact = JavascriptReverseRoute(
 }
                             
 
-// @LINE:20
+// @LINE:40
 class ReverseAssets {
     
 
 
  
-// @LINE:20
+// @LINE:40
 def at = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -671,11 +671,8 @@ def at = JavascriptReverseRoute(
                     
 
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
 // @LINE:36
-// @LINE:35
-// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:31
@@ -683,24 +680,27 @@ def at = JavascriptReverseRoute(
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
 // @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 package securesocial.controllers.ref {
 
-// @LINE:40
-// @LINE:39
+// @LINE:37
+// @LINE:36
 class ReverseProviderController {
     
 
 
  
-// @LINE:40
+// @LINE:37
 def authenticateByPost(provider:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.ProviderController.authenticateByPost(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticateByPost", Seq(classOf[String]))
 )
                               
  
-// @LINE:39
+// @LINE:36
 def authenticate(provider:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.ProviderController.authenticate(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticate", Seq(classOf[String]))
 )
@@ -711,20 +711,20 @@ def authenticate(provider:String) = new play.api.mvc.HandlerRef(
 }
                             
 
-// @LINE:36
-// @LINE:35
+// @LINE:33
+// @LINE:32
 class ReversePasswordChange {
     
 
 
  
-// @LINE:35
+// @LINE:32
 def page() = new play.api.mvc.HandlerRef(
    securesocial.controllers.PasswordChange.page(), HandlerDef(this, "securesocial.controllers.PasswordChange", "page", Seq())
 )
                               
  
-// @LINE:36
+// @LINE:33
 def handlePasswordChange() = new play.api.mvc.HandlerRef(
    securesocial.controllers.PasswordChange.handlePasswordChange(), HandlerDef(this, "securesocial.controllers.PasswordChange", "handlePasswordChange", Seq())
 )
@@ -735,20 +735,20 @@ def handlePasswordChange() = new play.api.mvc.HandlerRef(
 }
                             
 
-// @LINE:24
-// @LINE:23
+// @LINE:21
+// @LINE:20
 class ReverseLoginPage {
     
 
 
  
-// @LINE:24
+// @LINE:21
 def logout() = new play.api.mvc.HandlerRef(
    securesocial.controllers.LoginPage.logout(), HandlerDef(this, "securesocial.controllers.LoginPage", "logout", Seq())
 )
                               
  
-// @LINE:23
+// @LINE:20
 def login() = new play.api.mvc.HandlerRef(
    securesocial.controllers.LoginPage.login(), HandlerDef(this, "securesocial.controllers.LoginPage", "login", Seq())
 )
@@ -759,62 +759,62 @@ def login() = new play.api.mvc.HandlerRef(
 }
                             
 
-// @LINE:34
-// @LINE:33
-// @LINE:32
 // @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
+// @LINE:26
+// @LINE:25
+// @LINE:24
 class ReverseRegistration {
     
 
 
  
-// @LINE:32
+// @LINE:29
 def handleStartResetPassword() = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleStartResetPassword(), HandlerDef(this, "securesocial.controllers.Registration", "handleStartResetPassword", Seq())
 )
                               
  
-// @LINE:28
+// @LINE:25
 def handleStartSignUp() = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleStartSignUp(), HandlerDef(this, "securesocial.controllers.Registration", "handleStartSignUp", Seq())
 )
                               
  
-// @LINE:30
+// @LINE:27
 def handleSignUp(token:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleSignUp(token), HandlerDef(this, "securesocial.controllers.Registration", "handleSignUp", Seq(classOf[String]))
 )
                               
  
-// @LINE:27
+// @LINE:24
 def startSignUp() = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.startSignUp(), HandlerDef(this, "securesocial.controllers.Registration", "startSignUp", Seq())
 )
                               
  
-// @LINE:33
+// @LINE:30
 def resetPassword(token:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.resetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "resetPassword", Seq(classOf[String]))
 )
                               
  
-// @LINE:31
+// @LINE:28
 def startResetPassword() = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.startResetPassword(), HandlerDef(this, "securesocial.controllers.Registration", "startResetPassword", Seq())
 )
                               
  
-// @LINE:29
+// @LINE:26
 def signUp(token:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.signUp(token), HandlerDef(this, "securesocial.controllers.Registration", "signUp", Seq(classOf[String]))
 )
                               
  
-// @LINE:34
+// @LINE:31
 def handleResetPassword(token:String) = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleResetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "handleResetPassword", Seq(classOf[String]))
 )
@@ -827,7 +827,7 @@ def handleResetPassword(token:String) = new play.api.mvc.HandlerRef(
 }
                     
 
-// @LINE:20
+// @LINE:40
 // @LINE:17
 // @LINE:16
 // @LINE:12
@@ -841,14 +841,14 @@ package controllers.ref {
 
 // @LINE:17
 // @LINE:16
-class ReverseEnter {
+class ReverseStart {
     
 
 
  
 // @LINE:16
 def estimator() = new play.api.mvc.HandlerRef(
-   controllers.Enter.estimator(), HandlerDef(this, "controllers.Enter", "estimator", Seq())
+   controllers.Start.estimator(), HandlerDef(this, "controllers.Start", "estimator", Seq())
 )
                               
 
@@ -916,13 +916,13 @@ def contact() = new play.api.mvc.HandlerRef(
 }
                             
 
-// @LINE:20
+// @LINE:40
 class ReverseAssets {
     
 
 
  
-// @LINE:20
+// @LINE:40
 def at(path:String, file:String) = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]))
 )

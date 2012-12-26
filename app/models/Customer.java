@@ -21,10 +21,10 @@ public class Customer extends Model {
     public Long id;
 	
 	@Constraints.Required
-	public BigDecimal providerId;
+	public BigDecimal pid;
 		
     @Constraints.Required
-    public String displayName;
+    public String name;
 	
     @Constraints.Required
     public String email;
@@ -44,21 +44,21 @@ public class Customer extends Model {
     
     
     /**
-     * @param providerId
-     * @param displayName
+     * @param pid
+     * @param name
      * @param email
      * @param provider
      */
-    public Customer(BigDecimal 	providerId, 
-    			String 		displayName, 
+    public Customer(BigDecimal 	pid, 
+    			String 		name, 
     			String 		email, 
     			String 		provider, 
     			Timestamp 	lastLogin, 
     			Timestamp 	updatedOn, 
     			Timestamp 	createdOn) {
         
-    	this.providerId = providerId;
-        this.displayName = displayName;
+    	this.pid = pid;
+        this.name = name;
         this.email = email;
         this.provider = provider;
         this.lastLogin = lastLogin;
@@ -89,8 +89,8 @@ public class Customer extends Model {
     /**
      * Retrieve a Customer based on their providerId.
      */
-    public static Customer findByProviderId(BigDecimal providerId) {
-        return find.where().eq("providerId", providerId).findUnique();
+    public static Customer findByProviderId(BigDecimal pid) {
+        return find.where().eq("pid", pid).findUnique();
     }
     
     /**
@@ -111,21 +111,21 @@ public class Customer extends Model {
     /**
      * Adds a Customer from various providers(like FB, Twitter...) to a customer table.
      */
-    public static Customer register(BigDecimal	providerId, 
-    							String 		displayName, 
+    public static Customer register(BigDecimal	pid, 
+    							String 		name, 
     							String 		email, 
     							String 		provider, 
     							Timestamp 	lastLogin, 
     							Timestamp	updatedOn,
     							Timestamp	createdOn) {
     	
-    	Customer customer = new Customer(providerId, displayName, email, provider, lastLogin, updatedOn, createdOn);
+    	Customer customer = new Customer(pid, name, email, provider, lastLogin, updatedOn, createdOn);
     	customer.save();
         return customer;
     }
     
     public String toString() {
-        return "Customer(" + email + ","+ providerId + "," + displayName + ","+ provider + ")";
+        return "Customer(" + email + ","+ pid + "," + name + ","+ provider + ")";
     }
 
 }

@@ -13,11 +13,8 @@ GET     /login                      controllers.Application.login()
 
 # Esimator page after login
 # -------------------------
-GET		/estimator					controllers.Enter.estimator()
-POST	/estimator					controllers.Enter.estimator()
-
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET		/start						controllers.Start.estimator()
+POST	/start						controllers.Start.estimator()
 
 # Login page
 GET     /login                      securesocial.controllers.LoginPage.login
@@ -38,3 +35,6 @@ POST    /password                   securesocial.controllers.PasswordChange.hand
 # Providers entry points
 GET     /authenticate/:provider     securesocial.controllers.ProviderController.authenticate(provider)
 POST    /authenticate/:provider     securesocial.controllers.ProviderController.authenticateByPost(provider)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
