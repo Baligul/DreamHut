@@ -78,8 +78,6 @@ public class Start extends Controller {
         	 */
         	session("userId", Long.toString(newCustomer.id));
           	session("name", newCustomer.name);
-          	return ok(index.render());
-                  	        	        	
         } else {
         	customer.lastLogin = Timestamp.valueOf(dateFormat.format(date).toString());
         	customer.save();
