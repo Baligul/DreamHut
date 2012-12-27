@@ -1,318 +1,64 @@
-2012-12-27 03:50:43,618 - [INFO] - from play in main 
+2012-12-27 05:42:43,276 - [INFO] - from play in main 
 Listening for HTTP on port 9000...
 
-2012-12-27 03:51:00,247 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 03:51:05,563 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 03:51:05,633 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
-Starting application default Akka system.
-
-2012-12-27 03:51:05,678 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 03:51:05,691 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Loaded BCryptPasswordHasher
-
-2012-12-27 03:51:05,712 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: twitter
-
-2012-12-27 03:51:05,712 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: facebook
-
-2012-12-27 03:51:05,712 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: google
-
-2012-12-27 03:51:05,713 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: linkedin
-
-2012-12-27 03:51:05,737 - [DEBUG] - from application in application-akka.actor.default-dispatcher-2 
-Calling deleteExpiredTokens()
-
-2012-12-27 03:51:05,875 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: userpass
-
-2012-12-27 03:51:05,875 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-Registered Identity Provider: github
-
-2012-12-27 03:51:05,878 - [INFO] - from play in play-akka.actor.default-dispatcher-2 
-Application started (Dev)
-
-2012-12-27 03:56:05,814 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:01:05,915 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:06:06,015 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:08:01,147 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
-Shutdown application default Akka system.
-
-2012-12-27 04:08:03,984 - [DEBUG] - from application in application-akka.actor.default-dispatcher-4 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:08:04,725 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 04:08:10,552 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 04:08:10,890 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
-Starting application default Akka system.
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Loaded BCryptPasswordHasher
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: twitter
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: facebook
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: google
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: linkedin
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: userpass
-
-2012-12-27 04:08:10,890 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-Registered Identity Provider: github
-
-2012-12-27 04:08:10,891 - [INFO] - from play in play-akka.actor.default-dispatcher-13 
-Application started (Dev)
-
-2012-12-27 04:08:10,958 - [DEBUG] - from application in application-akka.actor.default-dispatcher-2 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:08:47,870 - [INFO] - from play in play-akka.actor.default-dispatcher-14 
-Shutdown application default Akka system.
-
-2012-12-27 04:08:47,872 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:08:47,983 - [INFO] - from play in play-akka.actor.default-dispatcher-14 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 04:08:50,057 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 04:08:50,123 - [INFO] - from play in play-akka.actor.default-dispatcher-14 
-Starting application default Akka system.
-
-2012-12-27 04:08:50,123 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 04:08:50,123 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Loaded BCryptPasswordHasher
-
-2012-12-27 04:08:50,123 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: twitter
-
-2012-12-27 04:08:50,123 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: facebook
-
-2012-12-27 04:08:50,124 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: google
-
-2012-12-27 04:08:50,124 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: linkedin
-
-2012-12-27 04:08:50,124 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: userpass
-
-2012-12-27 04:08:50,124 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
-Registered Identity Provider: github
-
-2012-12-27 04:08:50,124 - [INFO] - from play in play-akka.actor.default-dispatcher-14 
-Application started (Dev)
-
-2012-12-27 04:08:50,223 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:13:50,323 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:16:24,495 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Shutdown application default Akka system.
-
-2012-12-27 04:16:24,526 - [DEBUG] - from application in application-akka.actor.default-dispatcher-5 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:16:24,675 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 04:16:26,485 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 04:16:26,503 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Starting application default Akka system.
-
-2012-12-27 04:16:26,504 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 04:16:26,504 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Loaded BCryptPasswordHasher
-
-2012-12-27 04:16:26,504 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: twitter
-
-2012-12-27 04:16:26,504 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: facebook
-
-2012-12-27 04:16:26,505 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: google
-
-2012-12-27 04:16:26,505 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: linkedin
-
-2012-12-27 04:16:26,505 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: userpass
-
-2012-12-27 04:16:26,505 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: github
-
-2012-12-27 04:16:26,505 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Application started (Dev)
-
-2012-12-27 04:16:26,602 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:17:28,108 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Shutdown application default Akka system.
-
-2012-12-27 04:17:28,111 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:17:28,158 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 04:17:28,588 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 04:17:28,691 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Starting application default Akka system.
-
-2012-12-27 04:17:28,691 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 04:17:28,691 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Loaded BCryptPasswordHasher
-
-2012-12-27 04:17:28,691 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: twitter
-
-2012-12-27 04:17:28,691 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: facebook
-
-2012-12-27 04:17:28,691 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: google
-
-2012-12-27 04:17:28,692 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: linkedin
-
-2012-12-27 04:17:28,692 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: userpass
-
-2012-12-27 04:17:28,692 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Registered Identity Provider: github
-
-2012-12-27 04:17:28,692 - [INFO] - from play in play-akka.actor.default-dispatcher-25 
-Application started (Dev)
-
-2012-12-27 04:17:28,787 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:22:28,888 - [DEBUG] - from application in application-akka.actor.default-dispatcher-4 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:24:17,393 - [INFO] - from play in play-akka.actor.default-dispatcher-29 
-Shutdown application default Akka system.
-
-2012-12-27 04:24:17,395 - [DEBUG] - from application in application-akka.actor.default-dispatcher-4 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:24:17,481 - [INFO] - from play in play-akka.actor.default-dispatcher-29 
-database [default] connected at jdbc:postgresql://localhost:5433/interior
-
-2012-12-27 04:24:19,041 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2012-12-27 04:24:19,055 - [INFO] - from play in play-akka.actor.default-dispatcher-29 
-Starting application default Akka system.
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered UserService: class service.InMemoryUserService
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Loaded BCryptPasswordHasher
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: twitter
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: facebook
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: google
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: linkedin
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: userpass
-
-2012-12-27 04:24:19,055 - [INFO] - from application in play-akka.actor.default-dispatcher-29 
-Registered Identity Provider: github
-
-2012-12-27 04:24:19,055 - [INFO] - from play in play-akka.actor.default-dispatcher-29 
-Application started (Dev)
-
-2012-12-27 04:24:19,154 - [DEBUG] - from application in application-akka.actor.default-dispatcher-1 
-Calling deleteExpiredTokens()
-
-2012-12-27 04:24:42,327 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-authorizationUrl = https://graph.facebook.com/oauth/authorize
-
-2012-12-27 04:24:42,328 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-Redirecting to : [https://graph.facebook.com/oauth/authorize?scope=email&client_id=551265721554436&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Ffacebook&response_type=code&state=9aff5e04-401c-4f9d-883c-e5746356c35e]
-
-2012-12-27 04:24:49,781 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-user = Some(SocialUser(UserId(,facebook),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(AAAH1X42ClgQBABKeWmZCq0nOkeJdQqUsKZAzOQ6gaDDq054cTddHzUpbDnT4ax9VfBYylrWOwmxKGVD05TZCwPx9NHZCIhnpVod5ZCNWLZBwZDZD,None,Some(5180281),None)),None))
-
-2012-12-27 04:24:51,071 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-User logged in : [SocialUser(UserId(100003506959900,facebook),Shireen,Mirza,Shireen Mirza,Some(shireen.mirza90@gmail.com),Some(https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/174430_100003506959900_1705898699_q.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(AAAH1X42ClgQBABKeWmZCq0nOkeJdQqUsKZAzOQ6gaDDq054cTddHzUpbDnT4ax9VfBYylrWOwmxKGVD05TZCwPx9NHZCIhnpVod5ZCNWLZBwZDZD,None,Some(5180281),None)),None)]
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-id: 100003506959900
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-fullName: Shireen Mirza
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-firstName: Shireen
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-lastName: Mirza
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-mail: shireen.mirza90@gmail.com
-
-2012-12-27 04:24:52,021 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-42 
-provider: facebook
-
-2012-12-27 04:25:07,245 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-44 
-authorizationUrl = https://accounts.google.com/o/oauth2/auth
-
-2012-12-27 04:25:07,245 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-44 
-Redirecting to : [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=your_client_id&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=8d3d8508-6017-4a2f-b2ae-1512acecb58a]
+2012-12-27 05:43:57,579 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in play-akka.actor.default-dispatcher-1 
+Failed to obtain initial connection Sleeping for 0ms and trying again. Attempts left: 0. Exception: null
+
+2012-12-27 05:43:57,728 - [ERROR] - from application in New I/O  worker #1 
+
+
+! @6cn9o50bj - Internal server error, for request [GET /] ->
+
+play.api.Configuration$$anon$1: Configuration error [Cannot connect to database [default]]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:71) ~[play_2.9.1.jar:2.0.4]
+	at play.api.Configuration.reportError(Configuration.scala:258) ~[play_2.9.1.jar:2.0.4]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:249) ~[play_2.9.1.jar:2.0.4]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:240) ~[play_2.9.1.jar:2.0.4]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:194) ~[scala-library.jar:0.11.3]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:194) ~[scala-library.jar:0.11.3]
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59) ~[scala-library.jar:0.11.3]
+	at scala.collection.immutable.List.foreach(List.scala:45) ~[scala-library.jar:0.11.3]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:194) ~[scala-library.jar:0.11.3]
+	at scala.collection.immutable.List.map(List.scala:45) ~[scala-library.jar:0.11.3]
+	at play.api.db.BoneCPPlugin.onStart(DB.scala:240) ~[play_2.9.1.jar:2.0.4]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:60) ~[play_2.9.1.jar:2.0.4]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:60) ~[play_2.9.1.jar:2.0.4]
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59) ~[scala-library.jar:0.11.3]
+	at scala.collection.immutable.List.foreach(List.scala:45) ~[scala-library.jar:0.11.3]
+	at play.api.Play$.start(Play.scala:60) ~[play_2.9.1.jar:2.0.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$3$$anonfun$1.apply(ApplicationProvider.scala:125) ~[play_2.9.1.jar:2.0.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$3$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.9.1.jar:2.0.4]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:0.11.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$3.apply(ApplicationProvider.scala:112) ~[play_2.9.1.jar:2.0.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$3.apply(ApplicationProvider.scala:110) ~[play_2.9.1.jar:2.0.4]
+	at scala.Either$RightProjection.flatMap(Either.scala:277) ~[scala-library.jar:0.11.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.9.1.jar:2.0.4]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.9.1.jar:2.0.4]
+	at akka.dispatch.Future$$anon$3.liftedTree1$1(Future.scala:195) ~[akka-actor.jar:2.0.2]
+	at akka.dispatch.Future$$anon$3.run(Future.scala:194) ~[akka-actor.jar:2.0.2]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:94) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1381) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:259) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1479) ~[akka-actor.jar:2.0.2]
+	at akka.jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[akka-actor.jar:2.0.2]
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "14.96.117.17", user "orcilbsdcunihe", database "d2k2kdrea9cv1i", SSL off
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:291) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:108) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:30) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(DriverManager.java:620) ~[na:1.6.0_24]
+	at java.sql.DriverManager.getConnection(DriverManager.java:200) ~[na:1.6.0_24]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256) ~[bonecp.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305) ~[bonecp.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCPDataSource.maybeInit(BoneCPDataSource.java:150) ~[bonecp.jar:0.7.1.RELEASE]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:112) ~[bonecp.jar:0.7.1.RELEASE]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:242) ~[play_2.9.1.jar:2.0.4]
+	... 29 common frames omitted
 
