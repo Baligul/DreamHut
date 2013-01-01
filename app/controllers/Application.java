@@ -19,19 +19,11 @@ public class Application extends Controller {
 	  return ok(index.render());
    }
   
-  public static Result about() {
-	  return ok(about.render());
-   }
-  
   public static Result contact() {
 	  return ok(contact.render());
    }
   
   public static Result gallery() {
 	  return ok(gallery.render());
-   }
-  
-  public static Result login() {
-	  return ok(login.render());
    }
 }

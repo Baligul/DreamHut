@@ -5,11 +5,9 @@
 # Home page
 GET     /                           controllers.Application.index()
 GET     /home                       controllers.Application.home()
-GET     /about                      controllers.Application.about()
 GET     /gallery                    controllers.Application.gallery()
 GET     /contact                    controllers.Application.contact()
 GET     /map                        controllers.Application.map()
-GET     /login                      controllers.Application.login()
 
 # Esimator page after login
 # -------------------------

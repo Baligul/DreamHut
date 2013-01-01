@@ -42,32 +42,51 @@
 *@
 @content = {
 @views.html.header()
-<div>
-<table>
-<tr>
-<td>
-	<div id="header_title">
-		<span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br>
-	</div>
-</td>
-<td>Slider will go here.</td>
-<td >
-<table>
-<tr><td></td></tr>
-<tr><td><a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src="@routes.Assets.at("images/facebook.jpg")" /></a></td></tr>
-<tr><td><a id="provider_google" class="provider_google" href="/authenticate/google"><img src="@routes.Assets.at("images/google.jpg")" /></a></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-</table>
-</div>
-</td>
-</tr>
-</table>
-</div>
-	
-	
-	
-	
+<div id = "login_window">
+	<table class = "login_table">
+			<tr>
+				<td class = "home_text_column">
+					<div id = "home_text">
+						<img src="@routes.Assets.at("images/home_content.png")">
+				    </div>
+				</td>
+				<td width = "150px">
+				
+				</td>
+				<td width = "300px">
+				
+				</td>
+				<td width = "150px">
+				
+				</td>
+				<td >
+				    <center>
+						<table>
+							<tr>
+								<td>
+									<img src="@routes.Assets.at("images/login_content.png")">
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr height="50px";>
+							</tr>
+							<tr>
+								<td>
+									<a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src="@routes.Assets.at("images/facebook.jpg")"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="provider_google" class="provider_google" href="/authenticate/google"><img src="@routes.Assets.at("images/google.jpg")"></a>
+								</td>
+							</tr>
+						</table>
+					</center>
+				</td>
+			</tr>
+		</table>
+</div>	
 @views.html.footer()
 }
 	

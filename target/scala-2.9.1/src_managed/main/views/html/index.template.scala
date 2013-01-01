@@ -59,33 +59,52 @@ Seq[Any](format.raw/*21.21*/("""
 
 Seq[Any](format.raw/*43.13*/("""
 """),_display_(Seq[Any](/*44.2*/views/*44.7*/.html.header())),format.raw/*44.21*/("""
-<div>
-<table>
-<tr>
-<td>
-	<div id="header_title">
-		<span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br>
-	</div>
-</td>
-<td>Slider will go here.</td>
-<td >
-<table>
-<tr><td></td></tr>
-<tr><td><a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src=""""),_display_(Seq[Any](/*57.90*/routes/*57.96*/.Assets.at("images/facebook.jpg"))),format.raw/*57.129*/("""" /></a></td></tr>
-<tr><td><a id="provider_google" class="provider_google" href="/authenticate/google"><img src=""""),_display_(Seq[Any](/*58.96*/routes/*58.102*/.Assets.at("images/google.jpg"))),format.raw/*58.133*/("""" /></a></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-</table>
-</div>
-</td>
-</tr>
-</table>
-</div>
-	
-	
-	
-	
-"""),_display_(Seq[Any](/*71.2*/views/*71.7*/.html.footer())),format.raw/*71.21*/("""
+<div id = "login_window">
+	<table class = "login_table">
+			<tr>
+				<td class = "home_text_column">
+					<div id = "home_text">
+						<img src=""""),_display_(Seq[Any](/*50.18*/routes/*50.24*/.Assets.at("images/home_content.png"))),format.raw/*50.61*/("""">
+				    </div>
+				</td>
+				<td width = "150px">
+				
+				</td>
+				<td width = "300px">
+				
+				</td>
+				<td width = "150px">
+				
+				</td>
+				<td >
+				    <center>
+						<table>
+							<tr>
+								<td>
+									<img src=""""),_display_(Seq[Any](/*67.21*/routes/*67.27*/.Assets.at("images/login_content.png"))),format.raw/*67.65*/("""">
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr height="50px";>
+							</tr>
+							<tr>
+								<td>
+									<a id="provider_fb" class="provider_fb" href="/authenticate/facebook"><img src=""""),_display_(Seq[Any](/*76.91*/routes/*76.97*/.Assets.at("images/facebook.jpg"))),format.raw/*76.130*/(""""></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="provider_google" class="provider_google" href="/authenticate/google"><img src=""""),_display_(Seq[Any](/*81.97*/routes/*81.103*/.Assets.at("images/google.jpg"))),format.raw/*81.134*/(""""></a>
+								</td>
+							</tr>
+						</table>
+					</center>
+				</td>
+			</tr>
+		</table>
+</div>	
+"""),_display_(Seq[Any](/*90.2*/views/*90.7*/.html.footer())),format.raw/*90.21*/("""
 """)))};
 Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*14.2*/("""
@@ -94,10 +113,10 @@ Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*36.2*/("""
 
 """),format.raw/*42.3*/("""
-"""),format.raw/*72.2*/("""
+"""),format.raw/*91.2*/("""
 	
-"""),format.raw/*78.3*/("""
-"""),_display_(Seq[Any](/*79.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
+"""),format.raw/*97.3*/("""
+"""),_display_(Seq[Any](/*98.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
     }
     
     def render() = apply()
@@ -109,11 +128,11 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 27 05:41:40 IST 2012
+                    DATE: Wed Jan 02 01:10:52 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/index.scala.html
-                    HASH: 07fb258721aec9c04b1a4e5e4aaac6b3884525c6
-                    MATRIX: 1412->408|1441->428|1509->432|1720->706|1744->721|1812->725|1863->740|1878->746|1936->782|2072->882|2087->888|2145->923|2222->964|2237->970|2297->1008|2383->1058|2398->1064|2482->1125|2798->1405|2813->1411|2880->1456|2966->1506|2981->1512|3055->1564|3141->1614|3156->1620|3230->1672|3292->1698|3307->1704|3370->1745|3447->1885|3462->1892|3530->1896|3567->1898|3580->1903|3616->1917|3991->2256|4006->2262|4062->2295|4212->2409|4228->2415|4282->2446|4427->2556|4440->2561|4476->2575|4516->406|4544->620|4573->704|4601->1799|4630->1883|4658->2577|4688->2709|4725->2711
-                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->33|55->33|55->33|56->34|56->34|56->34|57->35|57->35|57->35|58->43|58->43|60->43|61->44|61->44|61->44|74->57|74->57|74->57|75->58|75->58|75->58|88->71|88->71|88->71|90->9|91->14|93->20|94->36|96->42|97->72|99->78|100->79
+                    HASH: 84190f08c147f16a385b79056c64dccbbdeaab73
+                    MATRIX: 1412->408|1441->428|1509->432|1720->706|1744->721|1812->725|1863->740|1878->746|1936->782|2072->882|2087->888|2145->923|2222->964|2237->970|2297->1008|2383->1058|2398->1064|2482->1125|2798->1405|2813->1411|2880->1456|2966->1506|2981->1512|3055->1564|3141->1614|3156->1620|3230->1672|3292->1698|3307->1704|3370->1745|3447->1885|3462->1892|3530->1896|3567->1898|3580->1903|3616->1917|3799->2064|3814->2070|3873->2107|4143->2341|4158->2347|4218->2385|4468->2599|4483->2605|4539->2638|4730->2793|4746->2799|4800->2830|4938->2933|4951->2938|4987->2952|5027->406|5055->620|5084->704|5112->1799|5141->1883|5169->2954|5199->3086|5236->3088
+                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->33|55->33|55->33|56->34|56->34|56->34|57->35|57->35|57->35|58->43|58->43|60->43|61->44|61->44|61->44|67->50|67->50|67->50|84->67|84->67|84->67|93->76|93->76|93->76|98->81|98->81|98->81|107->90|107->90|107->90|109->9|110->14|112->20|113->36|115->42|116->91|118->97|119->98
                     -- GENERATED --
                 */
             

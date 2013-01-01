@@ -46,18 +46,23 @@ Seq[Any](format.raw/*1.68*/("""
 <body>
 	<div id="main">
     	<!-- header -->
-    	<div id="header">
-    		<div id="header_title">
-            	<a href="/home"><span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br></a>
-			</div>
-			<div id="logo">
-            	<a href="/home"><span class="logo_span">Logo</span><br />
-						Design your dream</a>
-			</div>
-		</div>
+    	<table >
+    		<tr height= "150px";>
+    			<td>
+    				<div id="logo">
+            			<a href="/home"><span class="logo_span"><img src=""""),_display_(Seq[Any](/*24.67*/routes/*24.73*/.Assets.at("images/logo.jpg"))),format.raw/*24.102*/(""""></span></a>
+					</div>
+	   			</td>
+				<td>	
+					<div id="header_title">
+            			<a href="/home"><span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br></a>
+					</div>
+				</td>
+			</tr>
+		</table>
     	<div id="border">
 		<!-- Start: Container -->
-			"""),_display_(Seq[Any](/*31.5*/content)),format.raw/*31.12*/("""
+			"""),_display_(Seq[Any](/*36.5*/content)),format.raw/*36.12*/("""
 		<!-- End: Container -->
 		</div>
 	</div>
@@ -74,11 +79,11 @@ Seq[Any](format.raw/*1.68*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 27 05:41:39 IST 2012
+                    DATE: Wed Jan 02 01:07:11 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/main.scala.html
-                    HASH: d7b88408f8a8ddf600bd9c95b87b862a54f2a74f
-                    MATRIX: 762->1|905->67|1426->553|1468->573|1508->578|1545->593|2043->1056|2072->1063
-                    LINES: 27->1|30->1|43->14|43->14|44->15|44->15|60->31|60->31
+                    HASH: a6bd74da7dca79cff9e86893e4f507412c4cbf51
+                    MATRIX: 762->1|905->67|1426->553|1468->573|1508->578|1545->593|1779->791|1794->797|1846->826|2212->1157|2241->1164
+                    LINES: 27->1|30->1|43->14|43->14|44->15|44->15|53->24|53->24|53->24|65->36|65->36
                     -- GENERATED --
                 */
             

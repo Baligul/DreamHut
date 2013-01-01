@@ -29,15 +29,24 @@
 		width: 300px;
 		padding: 5px;
 	}
-	table,td,th
-	{
-		border:1px solid white;
+	
+	login_table	{
+		height: 300px;
+		border:1px solid black;
 	}
-	td
-	{	
-		vertical-align:top;
-		height: 50px;
-		width: 300px;
+	
+	#login_window {
+		margin-left: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#home_text {
+		vertical-align: top;
+	}
+	
+	home_text_column {
+		vertical-align: top;
 	}
 /*
  * =======================

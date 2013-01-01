@@ -34,11 +34,11 @@ object header extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.
         _display_ {
 
 Seq[Any](format.raw/*5.2*/("""<div id="buttons">
-		<a href="/home" class="but"  title="">Home</a><div class="but_div"></div>
-		<a href="/gallery"  class="but" title="">Work&nbsp;Pictures</a><div class="but_div"></div>
-		<a href="/projects"  class="but" title="">Projects&nbsp;Done</a><div class="but_div"></div>
-		<a href="/offers" class="but">Offers</a><div class="but_div"></div>
-		<a href="/contact" class="but" title="">Contact&nbsp;Us</a><div class="but_div"></div>
+		<a href="/home" class="but"  title=""><i>Home</i></a><div class="but_div"></div>
+		<a href="/gallery"  class="but" title=""><i>Work&nbsp;Pictures</i></a><div class="but_div"></div>
+		<a href="/projects"  class="but" title=""><i>Projects&nbsp;Done</i></a><div class="but_div"></div>
+		<a href="/offers" class="but"><i>Offers</i></a><div class="but_div"></div>
+		<a href="/contact" class="but" title=""><i>Contact&nbsp;Us</i></a><div class="but_div"></div>
 	</div>
 """))}
     }
@@ -52,9 +52,9 @@ Seq[Any](format.raw/*5.2*/("""<div id="buttons">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 27 05:41:40 IST 2012
+                    DATE: Wed Jan 02 00:56:43 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/header.scala.html
-                    HASH: 1e5c471b6d8364c6886649eccc265647a042d31e
+                    HASH: cafd246b9d38a5986672ec7d776813b5fce4c1df
                     MATRIX: 1452->322
                     LINES: 36->5
                     -- GENERATED --

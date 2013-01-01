@@ -17,15 +17,20 @@
 <body>
 	<div id="main">
     	<!-- header -->
-    	<div id="header">
-    		<div id="header_title">
-            	<a href="/home"><span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br></a>
-			</div>
-			<div id="logo">
-            	<a href="/home"><span class="logo_span">Logo</span><br />
-						Design your dream</a>
-			</div>
-		</div>
+    	<table >
+    		<tr height= "150px";>
+    			<td>
+    				<div id="logo">
+            			<a href="/home"><span class="logo_span"><img src="@routes.Assets.at("images/logo.jpg")"></span></a>
+					</div>
+	   			</td>
+				<td>	
+					<div id="header_title">
+            			<a href="/home"><span class="header_title_span">Dream Hut</span><br> <span class="head_content_span">Interiors And Furniture</span></br></a>
+					</div>
+				</td>
+			</tr>
+		</table>
     	<div id="border">
 		<!-- Start: Container -->
 			@content
