@@ -376,3 +376,6 @@ authorizationUrl = https://accounts.google.com/o/oauth2/auth
 2013-01-02 01:41:27,268 - [DEBUG] - from application in play-akka.actor.actions-dispatcher-47 
 Redirecting to : [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=287080292904.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=59f9d139-bb7c-48dd-a949-aeb219e947c3]
 
+2013-01-02 01:46:02,329 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
