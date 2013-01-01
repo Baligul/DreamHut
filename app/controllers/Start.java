@@ -87,7 +87,7 @@ public class Start extends Controller {
            	session("name", customer.name);
         }
         
- 	  return ok(estimator.render());
+ 	  return ok(estimator.render(name));
     }
 
 }

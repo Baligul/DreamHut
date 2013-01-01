@@ -1,0 +1,21 @@
+/* Default CSS */
+/* CSS For Estimator */
+
+    body {
+      color:#000000;
+      background-color: lightblue;
+    }
+    a  { color:#0000FF; }
+    a:visited { color:#99CCFF; }
+    a:hover { color:#008000; }
+    a:active { color:#FF0000; }
+    
+    table {
+          border: 1px solid; 
+    }
+    
+    td, th {
+        border: 1px solid;
+        width: 150px;
+        text-align: center;
+    }

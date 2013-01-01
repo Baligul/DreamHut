@@ -2,6 +2,7 @@
 * Index. This is the home page.                        						   *
 *                                                                              *
 *******************************************************************************@
+@(customerName: String)
 @* 
 	----------------------------
 	-- Page Specific Metadata --
@@ -10,7 +11,7 @@
 @pageSpecificMetadata = {
 	<meta name="description" content="This is interior website.">
 	<meta name="keywords" content="interior, design, furniture, commercial, residential">
-	<title>Dream Hut Interiors</title>
+	<title>Estimator</title>
 }
 
 @* 
@@ -32,7 +33,7 @@
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.4.3.min.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.nivo.slider.pack.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.call.nivo.slider.js")"></script>
-	<link href="@routes.Assets.at("stylesheets/nivo-slider.css")" rel="stylesheet" type="text/css" media="screen" />
+	<link href="@routes.Assets.at("stylesheets/estimator.css")" rel="stylesheet" type="text/css" media="screen" />
 }
 
 @* 
@@ -42,13 +43,21 @@
 *@
 @content = {
 @views.html.header()
-	<div id="signin_button_container" class="signin_button_container">
-				<div>
-				<ul>
-	                <li><h1><a href="#wardrobe">Wardrobe</a></h1></li>
-	                <li><h1><a href="#kitchen">Kitchen</a></h1></li>
-	             </ul>
-	                <h1 id ="wardrobe">Wardrobe</h1>
+				<table>
+					<tr>
+						<td>
+							<h3>Hi @customerName, welcome to our site.</h3>
+							<ul>
+	                			<li><h1><a href="#wardrobe">Wardrobe</a></h1></li>
+	               				<li><h1><a href="#kitchen">Kitchen</a></h1></li>
+	            			</ul>						
+						</td>
+						<td>
+							<a href="@securesocial.controllers.routes.LoginPage.logout()" id="logout_link" class="logout_link">Log Out</a>
+						</td>
+					</tr>
+				</table>
+	              <h1 id ="wardrobe">Wardrobe</h1>
 				  <form action="#">
    					   <div>
 					  		<table>
@@ -1157,7 +1166,6 @@
 				   </div>
 				  </form>
 	            </div>
-	</div>
 @views.html.footer()
 }
 	

@@ -385,3 +385,24 @@ Calling deleteExpiredTokens()
 2013-01-02 01:56:02,587 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
 Calling deleteExpiredTokens()
 
+2013-01-02 02:01:02,670 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:06:02,729 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:11:02,830 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:16:02,929 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:21:03,029 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:26:03,129 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 02:31:03,229 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
