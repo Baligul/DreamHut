@@ -379,3 +379,9 @@ Redirecting to : [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2F
 2013-01-02 01:46:02,329 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
 Calling deleteExpiredTokens()
 
+2013-01-02 01:51:02,429 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
+2013-01-02 01:56:02,587 - [DEBUG] - from application in application-akka.actor.default-dispatcher-3 
+Calling deleteExpiredTokens()
+
