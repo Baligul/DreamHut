@@ -2,6 +2,7 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import securesocial.core.java.SecureSocial;
 
 import views.html.*;
 
@@ -27,6 +28,7 @@ public class Application extends Controller {
 	  return ok(gallery.render());
    }
   
+  @SecureSocial.SecuredAction
   public static Result estimatorContent(String id) {
 		return ok(estimator.render(id));
 	}
