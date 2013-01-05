@@ -26,4 +26,8 @@ public class Application extends Controller {
   public static Result gallery() {
 	  return ok(gallery.render());
    }
+  
+  public static Result estimatorContent(String id) {
+		return ok(estimator.render(id));
+	}
 }

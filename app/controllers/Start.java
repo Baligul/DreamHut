@@ -17,7 +17,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import views.html.index;
-import views.html.estimator;
+import views.html.estimator_welcome;
 
 /**
  * Application controller where user detail's is captured if user is logged in succefully. 
@@ -57,7 +57,7 @@ public class Start extends Controller {
  		// Prevent a NULL exception for display name as the database has NOT NULL
  		// set for the display_name column.
  		if (name == null) {
- 			name = "unknown";
+ 			name = "Anonymus";
  		}
  		
  	   if (customer == null) {
@@ -87,7 +87,7 @@ public class Start extends Controller {
            	session("name", customer.name);
         }
         
- 	  return ok(estimator.render(name));
+ 	  return ok(estimator_welcome.render(name));
     }
 
 }

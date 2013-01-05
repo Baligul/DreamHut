@@ -1,0 +1,96 @@
+@*******************************************************************************
+* Estimator Welcome. This is the welcome page for estimator.                        						   *
+*                                                                              *
+*******************************************************************************@
+@(customerName: String)
+@* 
+	----------------------------
+	-- Page Specific Metadata --
+	---------------------------- 
+*@
+@pageSpecificMetadata = {
+	<meta name="description" content="This is interior website.">
+	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<title>Estimator</title>
+}
+
+@* 
+	-----------------------
+	-- Page Specific CSS --
+	----------------------- 
+*@
+@pageSpecificCss = {
+	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
+	</script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#header_title')('.box_tit_text');
+	</script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.4.3.min.js")"></script>
+}
+
+@* 
+	-----------------------
+	-- Main HTML Content --
+	----------------------- 
+*@
+@content = {
+@views.html.header()
+				<table height= "70px">
+					<tr>
+						<td width = "20px">
+						</td>
+						<td>
+							<h2>@customerName</h2>
+						</td>
+						<td width = "800px">
+						</td>
+						<td>
+							<a href="#" >Log out</a>
+						</td>
+					</tr>
+				</table>
+				<center>
+				<table height = "50px">
+					<tr>
+						<td>
+							<h1>Welcome to our Estimator</h1>
+						</td>
+					</tr>
+					<tr height = "25px">
+					</tr>
+					<tr>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<ul>
+	                						<font size="4"><li><a href="/estimator/wardrobe">Wardrobe</a></li></font>
+	               							<font size="4"><li><a href="/estimator/kitchen">Kitchen</a></li></font>
+	               							<font size="4"><li><a href="/estimator/living_room">Living Room(coming soon...)</a></li></font>
+	               							<font size="4"><li><a href="/estimator/wooden_flooring">Wooden Flooring(coming soon...)</a></li></font>
+	               							<font size="4"><li><a href="/estimator/bed">Bed(coming soon...)</a></li></font>
+	               							<font size="4"><li><a href="/estimator/tv_units">T.V. Units(coming soon...)</a></li></font>
+	            						</ul>						
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height = "100px">
+					</tr>
+				</table>
+				</center>
+@views.html.footer()
+}
+	
+@* 
+	---------------------------------------
+	-- Call the main.scala.html template --
+	---------------------------------------
+*@
+@main(pageSpecificMetadata)(pageSpecificCss)(content)

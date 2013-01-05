@@ -12,6 +12,7 @@ GET     /map                        controllers.Application.map()
 # Esimator page after login
 # -------------------------
 GET		/start						controllers.Start.estimator()
+GET		/estimator/:id				controllers.Application.estimatorContent(id: String)
 POST	/start						controllers.Start.estimator()
 
 # Login page
