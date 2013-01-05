@@ -42,7 +42,7 @@
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -58,7 +58,7 @@
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form) calculateAmount(this.form, 1)" id = "combo_box">
 										   		   <option>3</option>
 												   <option>3.25</option>
 												   <option>3.5</option>
@@ -131,17 +131,17 @@
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form) calculateAmount(this.form, 1)" id = "combo_box">
   												   <option>6</option>
 												   <option>6.5</option>
 												   <option>7</option>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft) calculateAmount(this.form, 1)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>
 												   <option>Green ply</option>
@@ -149,21 +149,21 @@
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft) calculateAmount(this.form, 1)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft) calculateAmount(this.form, 1)" id = "combo_box">
 												   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 					  		</table>
@@ -203,7 +203,7 @@
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -217,7 +217,7 @@
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form) calculateAmount(this.form, 2)" id = "combo_box">
 										   		   <option>3</option>
 												   <option>3.25</option>
 												   <option>3.5</option>
@@ -290,7 +290,7 @@
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form) calculateAmount(this.form, 2)" id = "combo_box">
   												   <option>2</option>
 												   <option>2.25</option>
 												   <option>2.5</option>
@@ -301,10 +301,10 @@
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	    <input id = "text_box" value = "0.0" readonly = true></input>
+									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select id = "combo_box_disabled" disabled = true>
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -312,21 +312,21 @@
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select id = "combo_box_disabled" disabled = true>
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select id = "combo_box_disabled" disabled = true>
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 						 </table>
