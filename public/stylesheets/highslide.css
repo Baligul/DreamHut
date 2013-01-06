@@ -169,7 +169,7 @@ html>/**/body .highslide-gallery ul li {
 html>/**/body .highslide-gallery ul a {
 	position: static;
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: top;
 }
 html>/**/body .highslide-gallery ul img {
 	position: static;
