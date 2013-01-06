@@ -22,6 +22,7 @@
 @pageSpecificCss = {
 	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/estimator.css")">
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
 	<script type="text/javascript">
@@ -45,7 +46,7 @@
 						<td width = "20px">
 						</td>
 						<td>
-							<h2>@customerName</h2>
+							<div id = "customer_name">@customerName</div>
 						</td>
 						<td width = "800px">
 						</td>
