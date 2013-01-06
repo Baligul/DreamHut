@@ -167,7 +167,8 @@
   				}
     		break;
 			
-  			case "Century ply", "Green ply":
+  			case "Century ply":
+  			case "Green ply":
    				switch (myForm1.elements[5].value)
   				{
   					case "1mm century laminate":
@@ -526,7 +527,8 @@
   				}
     		break;
 			
-  			case "Century ply", "Green ply":
+  			case "Century ply":
+  			case "Green ply":
    				switch (myForm1.elements[5].value)
   				{
   					case "1mm century laminate":
