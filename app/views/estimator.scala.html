@@ -41,8 +41,22 @@
 	----------------------- 
 *@
 @content = {
-<body onload = "runTotal(frm_wardrobe);runTotal(frm_loft);runTotal(frm_uts);runTotal(frm_ats);runTotal(frm_ou)"></body>
+<body onload = "runTotal(frm_wardrobe);runTotal(frm_loft);runTotal(frm_uts);runTotal(frm_ats);runTotal(frm_ou);calculateAmount(frm_wardrobe, 1);calculateAmount(frm_loft, 2);calcAmount(frm_uts);calcAmount(frm_ats);calcAmount(frm_ou)"></body>
 @views.html.header()
+				<table height= "70px">
+					<tr>
+						<td width = "20px">
+						</td>
+						<td>
+							width = "12px"
+						</td>
+						<td width = "800px">
+						</td>
+						<td>
+							<a href="@securesocial.controllers.routes.LoginPage.logout()" >Log out</a>
+						</td>
+					</tr>
+				</table>	
 	@if(id == "wardrobe") {
 		<table width = "100%">
 			<tr>

@@ -168,6 +168,142 @@
     		break;
 			
   			case "Century ply":
+   				switch (myForm1.elements[5].value)
+  				{
+  					case "1mm century laminate":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 925;
+  											break;
+  												
+  											case 2:
+  												selection = 550;
+  											break;	
+  										}
+    							break;
+
+  								case "Design laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 940;
+  											break;
+  												
+  											case 2:
+  												selection = 560;
+  											break;	
+  										}
+    							break;
+  
+  								case "White paint":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 900;
+  											break;
+  												
+  											case 2:
+  												selection = 540;
+  											break;	
+  										}
+    							break;
+  							}
+    				break;
+
+  					case "4mm veneer with polish":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 1000;
+  											break;
+  												
+  											case 2:
+  												selection = 590;
+  											break;	
+  										}
+    							break;
+
+  								case "Design laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection =1015;
+  											break;
+  												
+  											case 2:
+  												selection = 610;
+  											break;	
+  										}
+    							break;
+  
+  								case "White paint":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 975;
+  											break;
+  												
+  											case 2:
+  												selection = 590;
+  											break;	
+  										}
+    							break;
+  							}   						
+    				break;
+  
+  					case "MDF moduler doors":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 1050;
+  											break;
+  												
+  											case 2:
+  												selection = 650;
+  											break;	
+  										}
+    							break;
+
+  								case "Design laminate":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 1075;
+  											break;
+  												
+  											case 2:
+  												selection = 675;
+  											break;	
+  										}
+    							break;
+  
+  								case "White paint":
+   									switch (option)
+  										{
+  											case 1:
+  												selection = 1025;
+  											break;
+  												
+  											case 2:
+  												selection = 640;
+  											break;	
+  										}
+    							break;
+  							}   						
+    				break;
+  				}
+    		break;
+    			
   			case "Green ply":
    				switch (myForm1.elements[5].value)
   				{
@@ -528,6 +664,78 @@
     		break;
 			
   			case "Century ply":
+   				switch (myForm1.elements[5].value)
+  				{
+  					case "1mm century laminate":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1000;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1015;
+    							break;
+  
+  								case "White paint":
+   									selection = 975;
+    							break;
+  							}
+    				break;
+
+  					case "4mm veneer with polish":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1070;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1085;
+    							break;
+  
+  								case "White paint":
+   									selection = 1045;
+    							break;
+  							}   						
+    				break;
+  
+  					case "Duco paint":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1125;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1140;
+    							break;
+  
+  								case "White paint":
+   									selection = 1100;
+    							break;
+  							}   						
+    				break;
+    
+  					case "MDF moduler doors":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1100;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1115;
+    							break;
+  
+  								case "White paint":
+   									selection = 1075;
+    							break;
+  							}   						
+    				break;
+  				}
+    		break;
+    			
   			case "Green ply":
    				switch (myForm1.elements[5].value)
   				{
