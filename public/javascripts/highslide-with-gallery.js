@@ -41,7 +41,7 @@ expandDuration : 250, // milliseconds
 restoreDuration : 250,
 marginLeft : 15,
 marginRight : 15,
-marginTop : 0,
+marginTop : 15,
 marginBottom : 15,
 zIndexCounter : 1001, // adjust to other absolutely positioned elements
 loadingOpacity : 0.75,
@@ -50,7 +50,7 @@ numberOfImagesToPreload : 5,
 outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only 
 outlineStartOffset : 3, // ends at 10
 padToMinWidth : false, // pad the popup width to make room for wide caption
-fullExpandPosition : 'top right',
+fullExpandPosition : 'bottom right',
 fullExpandOpacity : 1,
 showCredits : false, // you can set this to false if you want
 //creditsHref : 'http://highslide.com/',

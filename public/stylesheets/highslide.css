@@ -161,15 +161,15 @@ a.highslide-credits:hover i {
 }
 html>/**/body .highslide-gallery ul li {
 	display: table;
-	text-align: top;
+	text-align: center;
 }
 html>/**/body .highslide-gallery ul li {
-	text-align: top;
+	text-align: center;
 }
 html>/**/body .highslide-gallery ul a {
 	position: static;
 	display: table-cell;
-	vertical-align: top;
+	vertical-align: middle;
 }
 html>/**/body .highslide-gallery ul img {
 	position: static;
