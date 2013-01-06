@@ -64,7 +64,7 @@
 a.highslide-full-expand {
    background: url(../images/graphics/fullexpand.gif) no-repeat;
    display: block;
-   margin: 0 10px 10px 0;
+   margin: 0 10px 100px 0;
    width: 34px;
    height: 34px;
 }
@@ -860,17 +860,16 @@ html>/**/body .highslide-gallery ul img {
 	overflow: auto;
 }
 .highslide-thumbstrip-float ul {
-	margin: 2px 0;
+	margin: 2px 0;0
+	6
 	padding: 0;
 }
 .highslide-thumbstrip-float li {
 	display: block;
-	height: 60px;
-	margin: 0 2px;
-	list-style: none;
+	height: 60px;7++6+859529/812.02412	margin: 0 2px;
+	list-style: none;/1
 	float: left;
-}
-.highslide-thumbstrip-float img {
+}.highslide-thumbstrip-float img {
 	display: inline;
 	border-color: silver;
 	max-height: 56px;
@@ -883,4 +882,4 @@ html>/**/body .highslide-gallery ul img {
 }
 .highslide-thumbstrip-float .highslide-marker {
 	display: none;
-}
+}-
