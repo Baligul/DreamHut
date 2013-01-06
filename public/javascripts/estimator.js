@@ -444,3 +444,234 @@
 		
 		myForm1.elements[6].value = parseFloat(selection) * parseFloat(sqft);
     }
+    
+    function calcAmount(myForm1) {
+		var selection = 0;
+		var height = myForm1.elements[0].value;
+		var width = myForm1.elements[1].value;
+		var sqft = parseFloat(height) * parseFloat(width);
+		
+		switch (myForm1.elements[3].value)
+  		{
+  			case "Woodland":
+   				switch (myForm1.elements[5].value)
+  				{
+  					case "1mm century laminate":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+  									selection = 875;
+     							break;
+
+  								case "Design laminate":
+  									selection = 890;
+    							break;
+  
+  								case "White paint":
+  									selection = 850;
+    							break;
+  							}
+    				break;
+
+  					case "4mm veneer with polish":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 945;
+    							break;
+
+  								case "Design laminate":
+   									selection = 960;
+    							break;
+  
+  								case "White paint":
+   									selection = 925;
+    							break;
+  							}   						
+    				break;
+  
+  					case "Duco paint":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1000;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1015;
+    							break;
+  
+  								case "White paint":
+   									selection = 975;
+    							break;
+  							}   						
+    				break;
+  
+  					case "MDF moduler doors":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 975;
+    							break;
+
+  								case "Design laminate":
+   									selection = 990;
+    							break;
+  
+  								case "White paint":
+   									selection = 950;
+    							break;
+  							}   						
+    				break;
+  				}
+    		break;
+			
+  			case "Century ply", "Green ply":
+   				switch (myForm1.elements[5].value)
+  				{
+  					case "1mm century laminate":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1000;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1015;
+    							break;
+  
+  								case "White paint":
+   									selection = 975;
+    							break;
+  							}
+    				break;
+
+  					case "4mm veneer with polish":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1070;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1085;
+    							break;
+  
+  								case "White paint":
+   									selection = 1045;
+    							break;
+  							}   						
+    				break;
+  
+  					case "Duco paint":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1125;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1140;
+    							break;
+  
+  								case "White paint":
+   									selection = 1100;
+    							break;
+  							}   						
+    				break;
+    
+  					case "MDF moduler doors":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 1100;
+    							break;
+
+  								case "Design laminate":
+   									selection = 1115;
+    							break;
+  
+  								case "White paint":
+   									selection = 1075;
+    							break;
+  							}   						
+    				break;
+  				}
+    		break;
+  
+  			case "Normal ISI":
+  				switch (myForm1.elements[5].value)
+  				{
+  					case "1mm century laminate":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 850;
+    							break;
+
+  								case "Design laminate":
+   									selection = 865;
+    							break;
+  
+  								case "White paint":
+   									selection = 825;
+    							break;
+  							}
+    				break;
+
+  					case "4mm veneer with polish":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 920;
+    							break;
+
+  								case "Design laminate":
+   									selection = 935;
+    							break;
+  
+  								case "White paint":
+   									selection = 900;
+    							break;
+  							}   						
+    				break;
+  
+  					case "Duco paint":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 975;
+    							break;
+
+  								case "Design laminate":
+   									selection = 990;
+    							break;
+  
+  								case "White paint":
+   									selection = 950;
+    							break;
+  							}   						
+    				break;
+  
+  					case "MDF moduler doors":
+  						switch (myForm1.elements[4].value)
+  							{
+  								case "White laminate":
+   									selection = 950;
+    							break;
+
+  								case "Design laminate":
+   									selection = 965;
+    							break;
+  
+  								case "White paint":
+   									selection = 925;
+    							break;
+  							}   						
+    				break;
+  				}
+  			break;			
+  		}
+		
+		myForm1.elements[6].value = parseFloat(selection) * parseFloat(sqft);
+    }

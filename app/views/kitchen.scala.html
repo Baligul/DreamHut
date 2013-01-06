@@ -56,7 +56,7 @@
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -257,7 +257,7 @@
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
   												   <option>2.75</option>
 										   </select>
 								  	  </td>
@@ -265,7 +265,7 @@
 									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>
 												   <option>Green ply</option>
@@ -273,17 +273,17 @@
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form)" id = "combo_box">
 												   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
@@ -342,7 +342,7 @@
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -543,7 +543,7 @@
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 												   <option>2</option>
 												   <option>2.25</option>
 												   <option>2.5</option>
@@ -553,7 +553,7 @@
 									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -561,17 +561,17 @@
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
@@ -630,7 +630,7 @@
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -831,7 +831,7 @@
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
   												   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -875,7 +875,7 @@
 									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -883,17 +883,17 @@
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box_disabled" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
