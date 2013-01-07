@@ -14,7 +14,7 @@
     
     #table_th {
     	color:white;
-    	background: url("../images/bar.jpg");
+    	background-color: #036abf;
         border: 1px solid;
         width: 130px;
         text-align: center;
@@ -24,7 +24,7 @@
     }
 
     #combo_box {
-    	color:blue;
+    	color: #036abf;
     	width: 100%;
     	text-align: center;
 		font-size:125%;
@@ -32,7 +32,16 @@
     }
     
     #main_header {
-    	color:blue;
+    	color: #036abf;
+    	width: 100%;
+    	text-align: center;
+		font-size: 10mm;
+		font-family:"Times New Roman",Georgia,Serif;
+		font-weight:bold;
+    }
+    
+   #welcome_header {
+    	color: #036abf;
     	width: 100%;
     	text-align: center;
 		font-size: 10mm;
@@ -41,7 +50,7 @@
     }
     
     #sub_header {
-    	color:blue;
+    	color: #036abf;
     	width: 100%;
     	text-align: left;
 		font-size:125%;
@@ -50,9 +59,34 @@
     }
     
     #text_box {
-    	color:blue;
+    	color: #036abf;
     	width: 100%;
     	text-align: center;
 		font-size:125%;
+		font-weight:bold;
+    }
+    
+    #text_box_disabled {
+    	color: grey;
+    	width: 100%;
+    	text-align: center;
+		font-size:125%;
+		font-weight:bold;
+    }
+    
+    #combo_box_disabled {
+    	color: grey;
+    	width: 100%;
+    	text-align: center;
+		font-size:125%;
+		font-weight:bold;
+    }
+    
+    #customer_name {
+    	color: #036abf;
+    	width: 200px;
+    	text-align: left;
+		font-size: 5mm;
+		font-family:"Times New Roman",Georgia,Serif;
 		font-weight:bold;
     }

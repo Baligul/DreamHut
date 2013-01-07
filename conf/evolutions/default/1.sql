@@ -57,6 +57,27 @@ CREATE TABLE customer
 CREATE INDEX ix_customer_pid 						ON customer (pid);
 CREATE INDEX ix_customer_provider 					ON customer (provider);
 
+
+-- ==============
+-- == MESSAGE ==
+-- ==============
+
+-- message
+-- ========
+-- message from the customer.
+
+CREATE TABLE messages
+(
+    id                      BIGSERIAL,
+    name 	    			VARCHAR(255) NOT NULL,
+    email 		    		VARCHAR(255) NULL,
+    phone 		    		VARCHAR(255) NULL,
+    detailed_message 		VARCHAR(255) NULL,
+    updated_on 				TIMESTAMP DEFAULT NOW(),
+    
+    CONSTRAINT pk_messages PRIMARY KEY (id)
+);
+
 # --- !Downs
 
 -- ==============================================================================
@@ -66,3 +87,4 @@ CREATE INDEX ix_customer_provider 					ON customer (provider);
 -- ==============================================================================
 
 DROP TABLE IF EXISTS customer 					CASCADE;
+DROP TABLE IF EXISTS message 					CASCADE;

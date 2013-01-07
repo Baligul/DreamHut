@@ -1,6 +1,6 @@
 // @SOURCE:/var/svn/DreamHut/conf/routes
-// @HASH:621462665ff8dddfa07f9e4d12e0d096e396252e
-// @DATE:Sun Jan 06 00:13:42 IST 2013
+// @HASH:17c0b3e108e6a6eaa0871a8a40e6eeb33c9ffc4e
+// @DATE:Mon Jan 07 04:48:00 IST 2013
 
 import play.core._
 import play.core.Router._
@@ -27,85 +27,97 @@ val controllers_Application_gallery2 = Route("GET", PathPattern(List(StaticPart(
                     
 
 // @LINE:9
-val controllers_Application_contact3 = Route("GET", PathPattern(List(StaticPart("/contact"))))
+val controllers_Application_projectsDone3 = Route("GET", PathPattern(List(StaticPart("/projects"))))
                     
 
 // @LINE:10
-val controllers_Application_map4 = Route("GET", PathPattern(List(StaticPart("/map"))))
+val controllers_Application_offers4 = Route("GET", PathPattern(List(StaticPart("/offers"))))
                     
 
-// @LINE:14
-val controllers_Start_estimator5 = Route("GET", PathPattern(List(StaticPart("/start"))))
+// @LINE:11
+val controllers_Application_contact5 = Route("GET", PathPattern(List(StaticPart("/contact"))))
                     
 
-// @LINE:15
-val controllers_Application_estimatorContent6 = Route("GET", PathPattern(List(StaticPart("/estimator/"),DynamicPart("id", """[^/]+"""))))
+// @LINE:12
+val controllers_Application_map6 = Route("GET", PathPattern(List(StaticPart("/map"))))
                     
 
-// @LINE:16
-val controllers_Start_estimator7 = Route("POST", PathPattern(List(StaticPart("/start"))))
+// @LINE:13
+val controllers_Application_addMessage7 = Route("POST", PathPattern(List(StaticPart("/message"))))
+                    
+
+// @LINE:17
+val controllers_Start_estimator8 = Route("GET", PathPattern(List(StaticPart("/start"))))
+                    
+
+// @LINE:18
+val controllers_Application_estimatorContent9 = Route("GET", PathPattern(List(StaticPart("/estimator/"),DynamicPart("id", """[^/]+"""))))
                     
 
 // @LINE:19
-val securesocial_controllers_LoginPage_login8 = Route("GET", PathPattern(List(StaticPart("/login"))))
+val controllers_Start_estimator10 = Route("POST", PathPattern(List(StaticPart("/start"))))
                     
 
-// @LINE:20
-val securesocial_controllers_LoginPage_logout9 = Route("GET", PathPattern(List(StaticPart("/logout"))))
+// @LINE:22
+val securesocial_controllers_LoginPage_login11 = Route("GET", PathPattern(List(StaticPart("/login"))))
                     
 
 // @LINE:23
-val securesocial_controllers_Registration_startSignUp10 = Route("GET", PathPattern(List(StaticPart("/signup"))))
-                    
-
-// @LINE:24
-val securesocial_controllers_Registration_handleStartSignUp11 = Route("POST", PathPattern(List(StaticPart("/signup"))))
-                    
-
-// @LINE:25
-val securesocial_controllers_Registration_signUp12 = Route("GET", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
+val securesocial_controllers_LoginPage_logout12 = Route("GET", PathPattern(List(StaticPart("/logout"))))
                     
 
 // @LINE:26
-val securesocial_controllers_Registration_handleSignUp13 = Route("POST", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
+val securesocial_controllers_Registration_startSignUp13 = Route("GET", PathPattern(List(StaticPart("/signup"))))
                     
 
 // @LINE:27
-val securesocial_controllers_Registration_startResetPassword14 = Route("GET", PathPattern(List(StaticPart("/reset"))))
+val securesocial_controllers_Registration_handleStartSignUp14 = Route("POST", PathPattern(List(StaticPart("/signup"))))
                     
 
 // @LINE:28
-val securesocial_controllers_Registration_handleStartResetPassword15 = Route("POST", PathPattern(List(StaticPart("/reset"))))
+val securesocial_controllers_Registration_signUp15 = Route("GET", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
                     
 
 // @LINE:29
-val securesocial_controllers_Registration_resetPassword16 = Route("GET", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+val securesocial_controllers_Registration_handleSignUp16 = Route("POST", PathPattern(List(StaticPart("/signup/"),DynamicPart("token", """[^/]+"""))))
                     
 
 // @LINE:30
-val securesocial_controllers_Registration_handleResetPassword17 = Route("POST", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+val securesocial_controllers_Registration_startResetPassword17 = Route("GET", PathPattern(List(StaticPart("/reset"))))
                     
 
 // @LINE:31
-val securesocial_controllers_PasswordChange_page18 = Route("GET", PathPattern(List(StaticPart("/password"))))
+val securesocial_controllers_Registration_handleStartResetPassword18 = Route("POST", PathPattern(List(StaticPart("/reset"))))
                     
 
 // @LINE:32
-val securesocial_controllers_PasswordChange_handlePasswordChange19 = Route("POST", PathPattern(List(StaticPart("/password"))))
+val securesocial_controllers_Registration_resetPassword19 = Route("GET", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:33
+val securesocial_controllers_Registration_handleResetPassword20 = Route("POST", PathPattern(List(StaticPart("/reset/"),DynamicPart("token", """[^/]+"""))))
+                    
+
+// @LINE:34
+val securesocial_controllers_PasswordChange_page21 = Route("GET", PathPattern(List(StaticPart("/password"))))
                     
 
 // @LINE:35
-val securesocial_controllers_ProviderController_authenticate20 = Route("GET", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
+val securesocial_controllers_PasswordChange_handlePasswordChange22 = Route("POST", PathPattern(List(StaticPart("/password"))))
                     
 
-// @LINE:36
-val securesocial_controllers_ProviderController_authenticateByPost21 = Route("POST", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
+// @LINE:38
+val securesocial_controllers_ProviderController_authenticate23 = Route("GET", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
                     
 
 // @LINE:39
-val controllers_Assets_at22 = Route("GET", PathPattern(List(StaticPart("/assets/"),DynamicPart("file", """.+"""))))
+val securesocial_controllers_ProviderController_authenticateByPost24 = Route("POST", PathPattern(List(StaticPart("/authenticate/"),DynamicPart("provider", """[^/]+"""))))
                     
-def documentation = List(("""GET""","""/""","""controllers.Application.index()"""),("""GET""","""/home""","""controllers.Application.home()"""),("""GET""","""/gallery""","""controllers.Application.gallery()"""),("""GET""","""/contact""","""controllers.Application.contact()"""),("""GET""","""/map""","""controllers.Application.map()"""),("""GET""","""/start""","""controllers.Start.estimator()"""),("""GET""","""/estimator/$id<[^/]+>""","""controllers.Application.estimatorContent(id:String)"""),("""POST""","""/start""","""controllers.Start.estimator()"""),("""GET""","""/login""","""securesocial.controllers.LoginPage.login"""),("""GET""","""/logout""","""securesocial.controllers.LoginPage.logout"""),("""GET""","""/signup""","""securesocial.controllers.Registration.startSignUp"""),("""POST""","""/signup""","""securesocial.controllers.Registration.handleStartSignUp"""),("""GET""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.signUp(token:String)"""),("""POST""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.handleSignUp(token:String)"""),("""GET""","""/reset""","""securesocial.controllers.Registration.startResetPassword"""),("""POST""","""/reset""","""securesocial.controllers.Registration.handleStartResetPassword"""),("""GET""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.resetPassword(token:String)"""),("""POST""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.handleResetPassword(token:String)"""),("""GET""","""/password""","""securesocial.controllers.PasswordChange.page"""),("""POST""","""/password""","""securesocial.controllers.PasswordChange.handlePasswordChange"""),("""GET""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticate(provider:String)"""),("""POST""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticateByPost(provider:String)"""),("""GET""","""/assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""))
+
+// @LINE:42
+val controllers_Assets_at25 = Route("GET", PathPattern(List(StaticPart("/assets/"),DynamicPart("file", """.+"""))))
+                    
+def documentation = List(("""GET""","""/""","""controllers.Application.index()"""),("""GET""","""/home""","""controllers.Application.home()"""),("""GET""","""/gallery""","""controllers.Application.gallery()"""),("""GET""","""/projects""","""controllers.Application.projectsDone()"""),("""GET""","""/offers""","""controllers.Application.offers()"""),("""GET""","""/contact""","""controllers.Application.contact()"""),("""GET""","""/map""","""controllers.Application.map()"""),("""POST""","""/message""","""controllers.Application.addMessage()"""),("""GET""","""/start""","""controllers.Start.estimator()"""),("""GET""","""/estimator/$id<[^/]+>""","""controllers.Application.estimatorContent(id:String)"""),("""POST""","""/start""","""controllers.Start.estimator()"""),("""GET""","""/login""","""securesocial.controllers.LoginPage.login"""),("""GET""","""/logout""","""securesocial.controllers.LoginPage.logout"""),("""GET""","""/signup""","""securesocial.controllers.Registration.startSignUp"""),("""POST""","""/signup""","""securesocial.controllers.Registration.handleStartSignUp"""),("""GET""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.signUp(token:String)"""),("""POST""","""/signup/$token<[^/]+>""","""securesocial.controllers.Registration.handleSignUp(token:String)"""),("""GET""","""/reset""","""securesocial.controllers.Registration.startResetPassword"""),("""POST""","""/reset""","""securesocial.controllers.Registration.handleStartResetPassword"""),("""GET""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.resetPassword(token:String)"""),("""POST""","""/reset/$token<[^/]+>""","""securesocial.controllers.Registration.handleResetPassword(token:String)"""),("""GET""","""/password""","""securesocial.controllers.PasswordChange.page"""),("""POST""","""/password""","""securesocial.controllers.PasswordChange.handlePasswordChange"""),("""GET""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticate(provider:String)"""),("""POST""","""/authenticate/$provider<[^/]+>""","""securesocial.controllers.ProviderController.authenticateByPost(provider:String)"""),("""GET""","""/assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""))
              
     
 def routes:PartialFunction[RequestHeader,Handler] = {        
@@ -135,159 +147,183 @@ case controllers_Application_gallery2(params) => {
                     
 
 // @LINE:9
-case controllers_Application_contact3(params) => {
+case controllers_Application_projectsDone3(params) => {
+   call { 
+        invokeHandler(_root_.controllers.Application.projectsDone(), HandlerDef(this, "controllers.Application", "projectsDone", Nil))
+   }
+}
+                    
+
+// @LINE:10
+case controllers_Application_offers4(params) => {
+   call { 
+        invokeHandler(_root_.controllers.Application.offers(), HandlerDef(this, "controllers.Application", "offers", Nil))
+   }
+}
+                    
+
+// @LINE:11
+case controllers_Application_contact5(params) => {
    call { 
         invokeHandler(_root_.controllers.Application.contact(), HandlerDef(this, "controllers.Application", "contact", Nil))
    }
 }
                     
 
-// @LINE:10
-case controllers_Application_map4(params) => {
+// @LINE:12
+case controllers_Application_map6(params) => {
    call { 
         invokeHandler(_root_.controllers.Application.map(), HandlerDef(this, "controllers.Application", "map", Nil))
    }
 }
                     
 
-// @LINE:14
-case controllers_Start_estimator5(params) => {
+// @LINE:13
+case controllers_Application_addMessage7(params) => {
+   call { 
+        invokeHandler(_root_.controllers.Application.addMessage(), HandlerDef(this, "controllers.Application", "addMessage", Nil))
+   }
+}
+                    
+
+// @LINE:17
+case controllers_Start_estimator8(params) => {
    call { 
         invokeHandler(_root_.controllers.Start.estimator(), HandlerDef(this, "controllers.Start", "estimator", Nil))
    }
 }
                     
 
-// @LINE:15
-case controllers_Application_estimatorContent6(params) => {
+// @LINE:18
+case controllers_Application_estimatorContent9(params) => {
    call(params.fromPath[String]("id", None)) { (id) =>
         invokeHandler(_root_.controllers.Application.estimatorContent(id), HandlerDef(this, "controllers.Application", "estimatorContent", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:16
-case controllers_Start_estimator7(params) => {
+// @LINE:19
+case controllers_Start_estimator10(params) => {
    call { 
         invokeHandler(_root_.controllers.Start.estimator(), HandlerDef(this, "controllers.Start", "estimator", Nil))
    }
 }
                     
 
-// @LINE:19
-case securesocial_controllers_LoginPage_login8(params) => {
+// @LINE:22
+case securesocial_controllers_LoginPage_login11(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.LoginPage.login, HandlerDef(this, "securesocial.controllers.LoginPage", "login", Nil))
    }
 }
                     
 
-// @LINE:20
-case securesocial_controllers_LoginPage_logout9(params) => {
+// @LINE:23
+case securesocial_controllers_LoginPage_logout12(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.LoginPage.logout, HandlerDef(this, "securesocial.controllers.LoginPage", "logout", Nil))
    }
 }
                     
 
-// @LINE:23
-case securesocial_controllers_Registration_startSignUp10(params) => {
+// @LINE:26
+case securesocial_controllers_Registration_startSignUp13(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.Registration.startSignUp, HandlerDef(this, "securesocial.controllers.Registration", "startSignUp", Nil))
    }
 }
                     
 
-// @LINE:24
-case securesocial_controllers_Registration_handleStartSignUp11(params) => {
+// @LINE:27
+case securesocial_controllers_Registration_handleStartSignUp14(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.Registration.handleStartSignUp, HandlerDef(this, "securesocial.controllers.Registration", "handleStartSignUp", Nil))
    }
 }
                     
 
-// @LINE:25
-case securesocial_controllers_Registration_signUp12(params) => {
+// @LINE:28
+case securesocial_controllers_Registration_signUp15(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         invokeHandler(_root_.securesocial.controllers.Registration.signUp(token), HandlerDef(this, "securesocial.controllers.Registration", "signUp", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:26
-case securesocial_controllers_Registration_handleSignUp13(params) => {
+// @LINE:29
+case securesocial_controllers_Registration_handleSignUp16(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         invokeHandler(_root_.securesocial.controllers.Registration.handleSignUp(token), HandlerDef(this, "securesocial.controllers.Registration", "handleSignUp", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:27
-case securesocial_controllers_Registration_startResetPassword14(params) => {
+// @LINE:30
+case securesocial_controllers_Registration_startResetPassword17(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.Registration.startResetPassword, HandlerDef(this, "securesocial.controllers.Registration", "startResetPassword", Nil))
    }
 }
                     
 
-// @LINE:28
-case securesocial_controllers_Registration_handleStartResetPassword15(params) => {
+// @LINE:31
+case securesocial_controllers_Registration_handleStartResetPassword18(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.Registration.handleStartResetPassword, HandlerDef(this, "securesocial.controllers.Registration", "handleStartResetPassword", Nil))
    }
 }
                     
 
-// @LINE:29
-case securesocial_controllers_Registration_resetPassword16(params) => {
+// @LINE:32
+case securesocial_controllers_Registration_resetPassword19(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         invokeHandler(_root_.securesocial.controllers.Registration.resetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "resetPassword", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:30
-case securesocial_controllers_Registration_handleResetPassword17(params) => {
+// @LINE:33
+case securesocial_controllers_Registration_handleResetPassword20(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         invokeHandler(_root_.securesocial.controllers.Registration.handleResetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "handleResetPassword", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:31
-case securesocial_controllers_PasswordChange_page18(params) => {
+// @LINE:34
+case securesocial_controllers_PasswordChange_page21(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.PasswordChange.page, HandlerDef(this, "securesocial.controllers.PasswordChange", "page", Nil))
    }
 }
                     
 
-// @LINE:32
-case securesocial_controllers_PasswordChange_handlePasswordChange19(params) => {
+// @LINE:35
+case securesocial_controllers_PasswordChange_handlePasswordChange22(params) => {
    call { 
         invokeHandler(_root_.securesocial.controllers.PasswordChange.handlePasswordChange, HandlerDef(this, "securesocial.controllers.PasswordChange", "handlePasswordChange", Nil))
    }
 }
                     
 
-// @LINE:35
-case securesocial_controllers_ProviderController_authenticate20(params) => {
+// @LINE:38
+case securesocial_controllers_ProviderController_authenticate23(params) => {
    call(params.fromPath[String]("provider", None)) { (provider) =>
         invokeHandler(_root_.securesocial.controllers.ProviderController.authenticate(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticate", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:36
-case securesocial_controllers_ProviderController_authenticateByPost21(params) => {
+// @LINE:39
+case securesocial_controllers_ProviderController_authenticateByPost24(params) => {
    call(params.fromPath[String]("provider", None)) { (provider) =>
         invokeHandler(_root_.securesocial.controllers.ProviderController.authenticateByPost(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticateByPost", Seq(classOf[String])))
    }
 }
                     
 
-// @LINE:39
-case controllers_Assets_at22(params) => {
+// @LINE:42
+case controllers_Assets_at25(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         invokeHandler(_root_.controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String])))
    }

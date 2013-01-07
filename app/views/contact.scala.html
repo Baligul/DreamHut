@@ -21,6 +21,7 @@
 @pageSpecificCss = {
 	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/contact.css")">
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
 	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
 	<script type="text/javascript">
@@ -38,8 +39,89 @@
 *@
 @content = {
 @views.html.header()
-<div><p>The contents will go here.</p></div>
+	<!-- Form Code Start -->
+<div>	
+<table>
+	<tr>
+		<td width = "30px">
+		</td>
+		<td width = "300px">
+		<form id="contactus">
+			<fieldset >
+			<legend>Contact us</legend>
+				<div id = "contact_header">
+					Dream Hut Interiors
+				</div>
+				<br/>
+				<div id = "contact_para">
+					#93, 4th Cross, 4th Main,<br/>
+					Sector 7th, HSR Layout, <br/>
+					Bangalore-560068,
+					<br/>Mob: +91 9535505170
+					<br/>Email: dreamhutinterior&#64;gmail.com
+				</div>
+			</fieldset >
+		</form>
+		</td>
+		<td width = "300px">
+		</td>
+		<td text-align = "right" width = "400px">
+			<form id="contactus" action="/message" method="POST">
+				<fieldset >
+					<legend>Contact us</legend>
+					<div class="short_explanation">* required fields</div>
+					<div class="container">
+    					<label for="name" >Your Full Name*: </label><br/>
+    					<input type="text" name="name" id="name" maxlength="50" /><br/>
+    					<span id="contactus_name_errorloc" class="error"></span>
+					</div>
+					<div class="container">
+    					<label for="email" >Email Address*:</label><br/>
+    					<input type="text" name="email" id="email" maxlength="50" /><br/>
+    					<span id="contactus_email_errorloc" class="error"></span>
+					</div>
+					<div class="container">
+   						<label for="phone" >Phone Number:</label><br/>
+    					<input type="text" name="phone" id="phone" maxlength="15" /><br/>
+    					<span id="contactus_phone_errorloc" class="error"></span>
+					</div>
+					<div class="container">
+    					<label for="message" >Message:</label><br/>
+    					<span id="contactus_message_errorloc" class="error"></span>
+    					<textarea rows="10" cols="50" name="message" id="message"></textarea>
+					</div>
+					<div class="container">
+    					<input type="submit" name="Submit" value="Submit" />
+					</div>
+				</fieldset>
+			</form>
+		</td>
+	</tr>	
+</table>
+<!-- client-side Form Validations:
+Uses the excellent form validation script from JavaScript-coder.com-->
+
+<script type="text/javascript">
+// <![CDATA[
+
+    var frmvalidator  = new Validator("contactus");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+    frmvalidator.addValidation("name","req","Please provide your name");
+
+    frmvalidator.addValidation("email","req","Please provide your email address");
+
+    frmvalidator.addValidation("email","email","Please provide a valid email address");
+
+    frmvalidator.addValidation("message","maxlen=2048","The message is too long!(more than 2KB!)");
+
+
+    frmvalidator.addValidation("scaptcha","req","Please answer the anti-spam question");
+// ]]>
+</script>
+
 @views.html.footer()
+</div>
 }
 	
 @* 

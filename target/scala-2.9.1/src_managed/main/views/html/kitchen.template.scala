@@ -73,7 +73,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply (Water proof)
+									   	   Ply & Block board<BR>(Water proof)</BR>
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -87,7 +87,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -288,15 +288,15 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
   												   <option>2.75</option>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	    <input id = "text_box" value = "0.0" readonly = true></input>
+									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form);calcAmount(frm_ats);calcAmount(frm_ou)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>
 												   <option>Green ply</option>
@@ -304,22 +304,22 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form);calcAmount(frm_ats);calcAmount(frm_ou)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou)" id = "combo_box">
+									  	   <select onchange = "changeOptionsK(this.form, frm_ats, frm_ou);calcAmount(this.form);calcAmount(frm_ats);calcAmount(frm_ou)" id = "combo_box">
 												   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 					  		</table>
@@ -359,7 +359,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board<BR>(Water proof)</BR>
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -373,7 +373,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -574,17 +574,17 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 												   <option>2</option>
 												   <option>2.25</option>
 												   <option>2.5</option>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	    <input id = "text_box" value = "0.0" readonly = true></input>
+									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -592,22 +592,22 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 						 </table>
@@ -647,7 +647,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board<BR>(Water proof)</BR>
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -661,7 +661,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
 										   		   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -862,7 +862,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calcAmount(this.form)" id = "combo_box">
   												   <option>1</option>
   												   <option>1.25</option>
   												   <option>1.5</option>
@@ -903,10 +903,10 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	    <input id = "text_box" value = "0.0" readonly = true></input>
+									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -914,22 +914,22 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "calcAmount(this.form)" id = "combo_box">
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
-												   <option>Duco Paint</option>
+												   <option>Duco paint</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 						 </table>
@@ -949,9 +949,9 @@ Seq[Any](format.raw/*5.1*/("""<center>
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Jan 06 00:13:48 IST 2013
+                    DATE: Mon Jan 07 04:48:05 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/kitchen.scala.html
-                    HASH: 4a153166e8a6f3217f50d58e2ca46a07465234d5
+                    HASH: 595478a7ef90ac3607dffaaca45e08ab0ee043fd
                     MATRIX: 1435->312
                     LINES: 36->5
                     -- GENERATED --

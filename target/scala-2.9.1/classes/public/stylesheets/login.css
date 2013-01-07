@@ -9,6 +9,12 @@
  */
  
  	/* Like buttons container */
+ 	#social_links_container_home {
+  		margin-top: 50px;
+  		right: 0px;
+  		width: 350px;
+	}
+	
 		#social_links_container {
   		position: absolute;
   		right: 0px;
@@ -36,7 +42,7 @@
 	}
 	
 	#login_window {
-		margin-left: 50px;
+		margin-left: 25px;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}

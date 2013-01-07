@@ -73,7 +73,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -89,7 +89,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 1)" id = "combo_box">
 										   		   <option>3</option>
 												   <option>3.25</option>
 												   <option>3.5</option>
@@ -162,17 +162,17 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 1)" id = "combo_box">
   												   <option>6</option>
 												   <option>6.5</option>
 												   <option>7</option>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft);calculateAmount(this.form, 1);calculateAmount(frm_loft, 2)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>
 												   <option>Green ply</option>
@@ -180,21 +180,21 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft);calculateAmount(this.form, 1);calculateAmount(frm_loft, 2)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select onchange = "changeOptionsWR(this.form, frm_loft)" id = "combo_box">
+									  	   <select onchange = "changeOptionsWR(this.form, frm_loft);calculateAmount(this.form, 1);calculateAmount(frm_loft, 2)" id = "combo_box">
 												   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 					  		</table>
@@ -234,7 +234,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 									   	   Square Feet
 									   </th>
 									   <th id = "table_th">
-									   	   Ply
+									   	   Ply & Block board
 									   </th>
 									   <th id = "table_th">
 									   	   Inside
@@ -248,7 +248,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 								   </tr>
 								   <tr>
 								   	   <td id = "table_td">
-									   	   <select onchange = "runTotal(this.form)" id = "combo_box">
+									   	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 2)" id = "combo_box">
 										   		   <option>3</option>
 												   <option>3.25</option>
 												   <option>3.5</option>
@@ -321,7 +321,7 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 								  	  <td id = "table_td">
-								  	  	   <select onchange = "runTotal(this.form)" id = "combo_box">
+								  	  	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 2)" id = "combo_box">
   												   <option>2</option>
 												   <option>2.25</option>
 												   <option>2.5</option>
@@ -332,10 +332,10 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 								  	  </td>
 									  <td id = "table_td">
-									  	    <input id = "text_box" value = "0.0" readonly = true></input>
+									  	    <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 2)" id = "combo_box">
 										   		   <option>Woodland</option>
 												   <option>Century ply</option>												   
 												   <option>Green ply</option>
@@ -343,21 +343,21 @@ Seq[Any](format.raw/*5.1*/("""<center>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 2)" id = "combo_box">
   												   <option>White laminate</option>
 												   <option>Design laminate</option>
 												   <option>White paint</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <select id = "combo_box" disabled = true>
+									  	   <select onchange = "runTotal(this.form);calculateAmount(this.form, 2)" id = "combo_box">
 										   		   <option>1mm century laminate</option>
 												   <option>4mm veneer with polish</option>
 												   <option>MDF moduler doors</option>
 										   </select>
 									  </td>
 									  <td id = "table_td">
-									  	   <input id = "text_box" value = "0.0" readonly = true></input>
+									  	   <input id = "text_box_disabled" value = "0.0" readonly = true></input>
 									  </td>
 								 </tr>
 						 </table>
@@ -377,9 +377,9 @@ Seq[Any](format.raw/*5.1*/("""<center>
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Jan 06 00:13:48 IST 2013
+                    DATE: Mon Jan 07 04:48:05 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/wardrobe.scala.html
-                    HASH: f63248edffba8e3616b26b626e65985b5aefd68b
+                    HASH: 4a4c1c7706cb00cd85be6ee4cb6bad40c6716803
                     MATRIX: 1440->314
                     LINES: 36->5
                     -- GENERATED --

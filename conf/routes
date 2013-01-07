@@ -6,8 +6,11 @@
 GET     /                           controllers.Application.index()
 GET     /home                       controllers.Application.home()
 GET     /gallery                    controllers.Application.gallery()
+GET     /projects                   controllers.Application.projectsDone()
+GET		/offers						controllers.Application.offers()
 GET     /contact                    controllers.Application.contact()
 GET     /map                        controllers.Application.map()
+POST	/message					controllers.Application.addMessage()
 
 # Esimator page after login
 # -------------------------

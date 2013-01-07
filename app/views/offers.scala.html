@@ -1,0 +1,111 @@
+@*******************************************************************************
+* Index. This is the home page.                        						   *
+*                                                                              *
+*******************************************************************************@
+@* 
+	----------------------------
+	-- Page Specific Metadata --
+	---------------------------- 
+*@
+@pageSpecificMetadata = {
+	<meta name="description" content="This is interior website.">
+	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<title>Dream Hut Interiors</title>
+}
+
+@* 
+	-----------------------
+	-- Page Specific CSS --
+	----------------------- 
+*@
+@pageSpecificCss = {
+	<link href="@routes.Assets.at("stylesheets/styles.css")" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/cufon-yui.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/Monotype_Corsiva_italic_400.font.js")"></script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#logo')('.box_tit_text');
+	</script>
+	<script type="text/javascript">
+       Cufon.replace ('h1')('h2')('h4')('#header_title')('.box_tit_text');
+	</script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.4.3.min.js")"></script>
+}
+
+@* 
+	-----------------------
+	-- Main HTML Content --
+	----------------------- 
+*@
+@content = {
+@views.html.header()
+<div id = "project_window">
+<center>
+	<table class = "project_table">
+			<tr>
+				<td>
+					<div id = "project_para">
+						If you are looking for best offers and want to avail great benefits then you are at the right place. We have many exciting offers and packages for you. 
+				    </div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id = "project_header">
+							Offers
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id = "project_list">
+						<ul>
+							<li>
+								If your flat is in such apartment where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>5%</b> discount on your total amount. 
+							</li>
+							<br/>
+							<li>
+								If your flat is in such apartment which is newly completed and where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>7.5%</b> discount on your total amount. 
+							</li>
+							<br/>
+							<li>
+								If your flat is at ground floor and in such apartment which is newly completed and where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>10%</b> discount on your total amount. 
+							</li>
+							<br/>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id = "project_header">
+					<div>
+							Packages
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id = "project_list">
+						<ul>
+							<li>
+								<b>2 BHK</b>(Laminated kitchen using water proof ply & stainless steel pull out baskets + wardrobes with loft in all the rooms) in <b>Rs. 2 lac 20 thousand</b>.
+							</li>
+							<li>
+								<b>3 BHK</b>(Laminated kitchen using water proof ply & stainless steel pull out baskets + wardrobes with loft in all the rooms) in <b>Rs. 2 lac 75 thousand</b>.
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+	</table>
+</center>
+</div>
+@views.html.footer()
+}
+	
+@* 
+	---------------------------------------
+	-- Call the main.scala.html template --
+	---------------------------------------
+*@
+@main(pageSpecificMetadata)(pageSpecificCss)(content)
