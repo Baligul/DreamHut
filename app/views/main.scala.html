@@ -12,7 +12,9 @@
 <head>
 	<meta charset="utf-8">
 	@pageSpecificMetadata
-  	@pageSpecificCss
+  	@pageSpecificCss = {
+  		<link rel="shortcut icon" type="image/jpg" href="@routes.Assets.at("images/logo.jpg")">
+  	}
 </head>
 <body>
 	<div id="main">
