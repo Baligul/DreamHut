@@ -13,17 +13,9 @@ public class Application extends Controller {
   public static Result index() {
 	  return ok(index.render());
    }
-  
-  public static Result map() {
-	  return ok(map.render());
-   }
-  
+
   public static Result home() {
 	  return ok(index.render());
-   }
-  
-  public static Result contact() {
-	  return ok(contact.render());
    }
   
   public static Result gallery() {
@@ -47,6 +39,23 @@ public class Application extends Controller {
 	  
 	  Message.add(name, email, phone, message);
 	  return ok(thank_you.render(name));
+   }
+
+  
+  public static Result contact() {
+	  return ok(contact.render());
+   }
+  
+  public static Result policy() {
+	  return ok(policy.render());
+   }
+  
+  public static Result tos() {
+	  return ok(tos.render());
+   }
+  
+  public static Result map() {
+	  return ok(map.render());
    }
     
   @SecureSocial.SecuredAction

@@ -1,8 +1,7 @@
 @*******************************************************************************
-* Thank you. This is the thank you page for message.                        						   *
+* TOS. This is the terms of services page.                        						   *
 *                                                                              *
 *******************************************************************************@
-@(name: String)
 @* 
 	----------------------------
 	-- Page Specific Metadata --
@@ -40,15 +39,28 @@
 *@
 @content = {
 @views.html.header()
-				<center>
-				<table height = "50px">
-					<tr>
-						<td>
-							<div id = "thank_you_text">Thank you @name! We have received your message and will get back to you very soon.</div>
-						</td>
-					</tr>
-				</table>
-				</center>
+<div id = "project_window">
+<center>
+	<table class = "project_table">
+			<tr>
+				<td>
+					<div id = "project_header">
+							Terms of Service
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id = "project_list">
+							<p>By using DreamhutInteriors.com you accept terms and conditions which are mentioned here.
+							<p>You can use the pictures and estimator on our site for free for knowing about the latest interior prices and design to support you interior work.
+							<p>Dreamhutinteriors.com will not ask you for any price or any information explicitly. Therefore you are solely responsible for any loss you incurred due to explicitly sharing your information or money to anyone in the name of Dreamhutinteriors.com. 
+					</div>
+				</td>
+			</tr>
+	</table>
+</center>
+</div>
 @views.html.footer()
 }
 	
