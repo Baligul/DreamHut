@@ -35,9 +35,9 @@ object estimator_welcome extends BaseScalaTemplate[play.api.templates.Html,Forma
 def /*11.2*/pageSpecificMetadata/*11.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*11.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
-	<title>Estimator</title>
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
+	<title>Dream Hut Interiors</title>
 """)))};def /*22.2*/pageSpecificCss/*22.17*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*22.21*/("""
@@ -126,10 +126,10 @@ Seq[Any](format.raw/*5.24*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 04:48:05 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/estimator_welcome.scala.html
-                    HASH: 1add77c684481cb05dd27d5eb86c877cdffb84a6
-                    MATRIX: 1433->339|1516->461|1545->481|1613->485|1814->749|1838->764|1906->768|1957->783|1972->789|2030->825|2166->925|2181->931|2239->966|2340->1031|2355->1037|2417->1076|2494->1117|2509->1123|2569->1161|2655->1211|2670->1217|2754->1278|3070->1558|3085->1564|3152->1609|3188->1708|3203->1715|3271->1719|3308->1721|3321->1726|3357->1740|3514->1861|3548->1873|3670->1959|3691->1971|3751->2009|4807->3030|4820->3035|4856->3049|4897->361|4925->459|4953->663|4982->747|5010->1622|5039->1706|5067->3051|5097->3183|5134->3185
+                    HASH: 1dcaaa70c95a4e3c240fafb73eb3b50187bae4ea
+                    MATRIX: 1433->339|1516->461|1545->481|1613->485|1955->890|1979->905|2047->909|2098->924|2113->930|2171->966|2307->1066|2322->1072|2380->1107|2481->1172|2496->1178|2558->1217|2635->1258|2650->1264|2710->1302|2796->1352|2811->1358|2895->1419|3211->1699|3226->1705|3293->1750|3329->1849|3344->1856|3412->1860|3449->1862|3462->1867|3498->1881|3655->2002|3689->2014|3811->2100|3832->2112|3892->2150|4948->3171|4961->3176|4997->3190|5038->361|5066->459|5094->804|5123->888|5151->1763|5180->1847|5208->3192|5238->3324|5275->3326
                     LINES: 33->5|35->11|35->11|37->11|41->22|41->22|43->22|44->23|44->23|44->23|45->24|45->24|45->24|46->25|46->25|46->25|47->26|47->26|47->26|48->27|48->27|48->27|55->34|55->34|55->34|56->42|56->42|58->42|59->43|59->43|59->43|65->49|65->49|70->54|70->54|70->54|104->88|104->88|104->88|106->5|107->10|108->15|110->21|111->35|113->41|114->89|116->95|117->96
                     -- GENERATED --
                 */

@@ -35,8 +35,8 @@ object index extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.t
 def /*10.2*/pageSpecificMetadata/*10.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*10.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
 	<title>Dream Hut Interiors</title>
 """)))};def /*21.2*/pageSpecificCss/*21.17*/:play.api.templates.Html = {_display_(
 
@@ -153,7 +153,7 @@ Seq[Any](format.raw/*40.13*/("""
 		</table>
 </div>
 <div id="footer_bottom" class="footer_bottom">
-	<p><a href="/contact">Contact</a> | <a href="/map">Map</a>
+	<p><a href="/contact">Contact</a> | <a href="/policy">Privacy Policy</a> | <a href="/tos">Terms of Service</a> | <a href="/map">Map</a>
 </div>
 """)))};
 Seq[Any](format.raw/*9.3*/("""
@@ -166,7 +166,8 @@ Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*141.2*/("""
 	
 """),format.raw/*147.3*/("""
-"""),_display_(Seq[Any](/*148.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
+"""),_display_(Seq[Any](/*148.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))),format.raw/*148.54*/("""
+"""))}
     }
     
     def render() = apply()
@@ -178,11 +179,11 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 06:52:50 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/index.scala.html
-                    HASH: 48333bf609c01f252fbff44992ecc4cefe65127b
-                    MATRIX: 1412->408|1441->428|1509->432|1720->706|1744->721|1812->725|1863->740|1878->746|1936->782|2072->882|2087->888|2145->923|2222->964|2237->970|2297->1008|2383->1058|2398->1064|2482->1125|2798->1405|2813->1411|2880->1456|2916->1555|2931->1562|2999->1566|3036->1568|3049->1573|3085->1587|4292->2758|4307->2764|4362->2797|4537->2935|4553->2941|4614->2979|4865->3193|4881->3199|4938->3232|5169->3426|5186->3432|5241->3463|5418->3603|5433->3608|5475->3627|5694->406|5722->620|5751->704|5779->1469|5808->1553|5837->3808|5868->3940|5906->3942
-                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->40|55->40|57->40|58->41|58->41|58->41|113->96|113->96|113->96|123->106|123->106|123->106|132->115|132->115|132->115|139->122|139->122|139->122|148->131|148->131|148->131|159->9|160->14|162->20|163->33|165->39|166->141|168->147|169->148
+                    HASH: 249b7a9ca447b59aee025f9ddc94ec02e6674fbe
+                    MATRIX: 1412->408|1441->428|1509->432|1851->837|1875->852|1943->856|1994->871|2009->877|2067->913|2203->1013|2218->1019|2276->1054|2353->1095|2368->1101|2428->1139|2514->1189|2529->1195|2613->1256|2929->1536|2944->1542|3011->1587|3047->1686|3062->1693|3130->1697|3167->1699|3180->1704|3216->1718|4423->2889|4438->2895|4493->2928|4668->3066|4684->3072|4745->3110|4996->3324|5012->3330|5069->3363|5300->3557|5317->3563|5372->3594|5549->3734|5564->3739|5606->3758|5902->406|5930->751|5959->835|5987->1600|6016->1684|6045->4016|6076->4148|6114->4150|6189->4202
+                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->40|55->40|57->40|58->41|58->41|58->41|113->96|113->96|113->96|123->106|123->106|123->106|132->115|132->115|132->115|139->122|139->122|139->122|148->131|148->131|148->131|159->9|160->14|162->20|163->33|165->39|166->141|168->147|169->148|169->148
                     -- GENERATED --
                 */
             

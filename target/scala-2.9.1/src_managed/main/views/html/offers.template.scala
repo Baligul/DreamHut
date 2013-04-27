@@ -35,8 +35,8 @@ object offers extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.
 def /*10.2*/pageSpecificMetadata/*10.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*10.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
 	<title>Dream Hut Interiors</title>
 """)))};def /*21.2*/pageSpecificCss/*21.17*/:play.api.templates.Html = {_display_(
 
@@ -78,11 +78,7 @@ Seq[Any](format.raw/*40.13*/("""
 					<div id = "project_list">
 						<ul>
 							<li>
-								If your flat is in such apartment where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>5%</b> discount on your total amount. 
-							</li>
-							<br/>
-							<li>
-								If your flat is in such apartment which is newly completed and where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>7.5%</b> discount on your total amount. 
+								If your flat is in such apartment which is newly completed and where we have not worked before and you are the first person for whom we are going to work then you are sure to get flat <b>5%</b> discount on your total amount. 
 							</li>
 							<br/>
 							<li>
@@ -117,7 +113,7 @@ Seq[Any](format.raw/*40.13*/("""
 	</table>
 </center>
 </div>
-"""),_display_(Seq[Any](/*103.2*/views/*103.7*/.html.footer())),format.raw/*103.21*/("""
+"""),_display_(Seq[Any](/*99.2*/views/*99.7*/.html.footer())),format.raw/*99.21*/("""
 """)))};
 Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*14.2*/("""
@@ -126,10 +122,10 @@ Seq[Any](format.raw/*9.3*/("""
 """),format.raw/*33.2*/("""
 
 """),format.raw/*39.3*/("""
-"""),format.raw/*104.2*/("""
+"""),format.raw/*100.2*/("""
 	
-"""),format.raw/*110.3*/("""
-"""),_display_(Seq[Any](/*111.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
+"""),format.raw/*106.3*/("""
+"""),_display_(Seq[Any](/*107.2*/main(pageSpecificMetadata)(pageSpecificCss)(content))))}
     }
     
     def render() = apply()
@@ -141,11 +137,11 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 04:48:05 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/offers.scala.html
-                    HASH: ccac45d0207a6ea5f59282c6370ce3b363e789a0
-                    MATRIX: 1413->408|1442->428|1510->432|1721->706|1745->721|1813->725|1864->740|1879->746|1937->782|2073->882|2088->888|2146->923|2223->964|2238->970|2298->1008|2384->1058|2399->1064|2483->1125|2799->1405|2814->1411|2881->1456|2917->1555|2932->1562|3000->1566|3037->1568|3050->1573|3086->1587|5056->3521|5070->3526|5107->3540|5147->406|5175->620|5204->704|5232->1469|5261->1553|5290->3542|5321->3674|5359->3676
-                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->40|55->40|57->40|58->41|58->41|58->41|120->103|120->103|120->103|122->9|123->14|125->20|126->33|128->39|129->104|131->110|132->111
+                    HASH: 7440fbf26f64c0c296485025d32694b66635b288
+                    MATRIX: 1413->408|1442->428|1510->432|1852->837|1876->852|1944->856|1995->871|2010->877|2068->913|2204->1013|2219->1019|2277->1054|2354->1095|2369->1101|2429->1139|2515->1189|2530->1195|2614->1256|2930->1536|2945->1542|3012->1587|3048->1686|3063->1693|3131->1697|3168->1699|3181->1704|3217->1718|4941->3407|4954->3412|4990->3426|5030->406|5058->751|5087->835|5115->1600|5144->1684|5173->3428|5204->3560|5242->3562
+                    LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->32|54->32|54->32|55->40|55->40|57->40|58->41|58->41|58->41|116->99|116->99|116->99|118->9|119->14|121->20|122->33|124->39|125->100|127->106|128->107
                     -- GENERATED --
                 */
             

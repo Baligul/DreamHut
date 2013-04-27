@@ -35,8 +35,8 @@ object contact extends BaseScalaTemplate[play.api.templates.Html,Format[play.api
 def /*10.2*/pageSpecificMetadata/*10.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*10.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
 	<title>Dream Hut Interiors</title>
 """)))};def /*21.2*/pageSpecificCss/*21.17*/:play.api.templates.Html = {_display_(
 
@@ -162,10 +162,10 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 06:56:35 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/contact.scala.html
-                    HASH: 36b61f6afd8558595483ed77541979a709f7ff91
-                    MATRIX: 1420->411|1449->431|1517->435|1728->709|1752->724|1820->728|1871->743|1886->749|1944->785|2080->885|2095->891|2153->926|2254->991|2269->997|2329->1034|2406->1075|2421->1081|2481->1119|2567->1169|2582->1175|2666->1236|2932->1565|2947->1572|3015->1576|3052->1578|3065->1583|3101->1597|5736->4196|5750->4201|5787->4215|5834->409|5862->623|5891->707|5919->1479|5948->1563|5977->4224|6008->4356|6046->4358
+                    HASH: 65302b924b685d1c88299b8ea8fba7743bf1a6e9
+                    MATRIX: 1420->411|1449->431|1517->435|1859->840|1883->855|1951->859|2002->874|2017->880|2075->916|2211->1016|2226->1022|2284->1057|2385->1122|2400->1128|2460->1165|2537->1206|2552->1212|2612->1250|2698->1300|2713->1306|2797->1367|3063->1696|3078->1703|3146->1707|3183->1709|3196->1714|3232->1728|5867->4327|5881->4332|5918->4346|5965->409|5993->754|6022->838|6050->1610|6079->1694|6108->4355|6139->4487|6177->4489
                     LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|48->26|48->26|48->26|55->40|55->40|57->40|58->41|58->41|58->41|140->123|140->123|140->123|143->9|144->14|146->20|147->33|149->39|150->125|152->131|153->132
                     -- GENERATED --
                 */

@@ -35,8 +35,8 @@ object map extends BaseScalaTemplate[play.api.templates.Html,Format[play.api.tem
 def /*10.2*/pageSpecificMetadata/*10.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*10.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
 	<title>Dream Hut Interiors</title>
 """)))};def /*21.2*/pageSpecificCss/*21.17*/:play.api.templates.Html = {_display_(
 
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*9.3*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 04:48:05 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/map.scala.html
-                    HASH: 71752d3efb206a9970dbcac37d2b91f413e9bb39
-                    MATRIX: 1408->407|1437->427|1505->431|1716->705|1740->720|1808->724|1859->739|1874->745|1932->781|2068->881|2083->887|2141->922|2218->963|2233->969|2293->1007|2379->1057|2394->1063|2478->1124|2744->1453|2759->1460|2827->1464|2864->1466|2877->1471|2913->1485|3154->1691|3167->1696|3203->1710|3243->405|3271->619|3300->703|3328->1367|3357->1451|3385->1712|3415->1844|3452->1846
+                    HASH: b3f13db0fc58dad8c87906e72f9195fb9c40b55e
+                    MATRIX: 1408->407|1437->427|1505->431|1847->836|1871->851|1939->855|1990->870|2005->876|2063->912|2199->1012|2214->1018|2272->1053|2349->1094|2364->1100|2424->1138|2510->1188|2525->1194|2609->1255|2875->1584|2890->1591|2958->1595|2995->1597|3008->1602|3044->1616|3285->1822|3298->1827|3334->1841|3374->405|3402->750|3431->834|3459->1498|3488->1582|3516->1843|3546->1975|3583->1977
                     LINES: 35->10|35->10|37->10|41->21|41->21|43->21|44->22|44->22|44->22|45->23|45->23|45->23|46->24|46->24|46->24|47->25|47->25|47->25|54->39|54->39|56->39|57->40|57->40|57->40|61->44|61->44|61->44|63->9|64->14|66->20|67->32|69->38|70->45|72->51|73->52
                     -- GENERATED --
                 */

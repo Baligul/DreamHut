@@ -35,9 +35,9 @@ object thank_you extends BaseScalaTemplate[play.api.templates.Html,Format[play.a
 def /*11.2*/pageSpecificMetadata/*11.22*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*11.26*/("""
-	<meta name="description" content="This is interior website.">
-	<meta name="keywords" content="interior, design, furniture, commercial, residential">
-	<title>Estimator</title>
+	<meta name="description" content="Dream Hut Interiors is the premier website in India which allows you to estimate the prices of your work online instantly.">
+	<meta name="keywords" content="dream, hut, estimator, dream hut, interior, design, furniture, commercial, residential">
+	<title>Dream Hut Interiors</title>
 """)))};def /*22.2*/pageSpecificCss/*22.17*/:play.api.templates.Html = {_display_(
 
 Seq[Any](format.raw/*22.21*/("""
@@ -90,10 +90,10 @@ Seq[Any](format.raw/*5.16*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 05:04:15 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/thank_you.scala.html
-                    HASH: bbd938a8c5a73f8246450a9e434df461dda6a792
-                    MATRIX: 1409->331|1484->445|1513->465|1581->469|1782->733|1806->748|1874->752|1925->767|1940->773|1998->809|2134->909|2149->915|2207->950|2284->991|2299->997|2359->1035|2445->1085|2460->1091|2544->1152|2860->1432|2875->1438|2942->1483|2978->1582|2993->1589|3061->1593|3098->1595|3111->1600|3147->1614|3291->1722|3317->1726|3477->1851|3490->1856|3526->1870|3567->345|3595->443|3623->647|3652->731|3680->1496|3709->1580|3737->1872|3767->2004|3804->2006
+                    HASH: 16fa9afd3d24dbac78cddfd00e53b0f4acf35d0e
+                    MATRIX: 1409->331|1484->445|1513->465|1581->469|1923->874|1947->889|2015->893|2066->908|2081->914|2139->950|2275->1050|2290->1056|2348->1091|2425->1132|2440->1138|2500->1176|2586->1226|2601->1232|2685->1293|3001->1573|3016->1579|3083->1624|3119->1723|3134->1730|3202->1734|3239->1736|3252->1741|3288->1755|3432->1863|3458->1867|3618->1992|3631->1997|3667->2011|3708->345|3736->443|3764->788|3793->872|3821->1637|3850->1721|3878->2013|3908->2145|3945->2147
                     LINES: 33->5|35->11|35->11|37->11|41->22|41->22|43->22|44->23|44->23|44->23|45->24|45->24|45->24|46->25|46->25|46->25|47->26|47->26|47->26|54->33|54->33|54->33|55->41|55->41|57->41|58->42|58->42|58->42|63->47|63->47|68->52|68->52|68->52|70->5|71->10|72->15|74->21|75->34|77->40|78->53|80->59|81->60
                     -- GENERATED --
                 */

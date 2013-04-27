@@ -53,13 +53,14 @@ Seq[Any](format.raw/*5.29*/("""
 		</div>
 	</div>
 	<div id="footer_bottom" class="footer_bottom">
-		<p><a href="/contact">Contact</a> | <a href="/map">Map</a>
+		<p><a href="/contact">Contact</a> | <a href="/policy">Privacy Policy</a> | <a href="/tos">Terms of Service</a> | <a href="/map">Map</a>
 	</div>
 </footer>
 """),format.raw/*28.27*/("""
 
 """),format.raw/*30.61*/("""
-<script src=""""),_display_(Seq[Any](/*31.15*/routes/*31.21*/.Assets.at("javascripts/login.js"))),format.raw/*31.55*/("""" type="text/javascript"></script>"""))}
+<script src=""""),_display_(Seq[Any](/*31.15*/routes/*31.21*/.Assets.at("javascripts/login.js"))),format.raw/*31.55*/("""" type="text/javascript"></script>
+"""))}
     }
     
     def render() = apply()
@@ -71,10 +72,10 @@ Seq[Any](format.raw/*5.29*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Jan 07 04:48:05 IST 2013
+                    DATE: Sat Apr 27 21:58:59 IST 2013
                     SOURCE: /var/svn/DreamHut/app/views/footer.scala.html
-                    HASH: 33db61d80dddd720e52490567ccb106fe0857f88
-                    MATRIX: 1447->346|2344->1241|2374->1303|2425->1318|2440->1324|2496->1358
+                    HASH: 78d84ed757b3a377d8b5c6ed98380a116e21e035
+                    MATRIX: 1447->346|2421->1318|2451->1380|2502->1395|2517->1401|2573->1435
                     LINES: 36->5|59->28|61->30|62->31|62->31|62->31
                     -- GENERATED --
                 */
